@@ -44,9 +44,9 @@ export default function footer() {
           </div>
           <iframe 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1561.943809599678!2d1.9110656155466434!3d48.82262000846439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e69b2a194d62f1%3A0xc6d5c3f7caf2ca79!2s21%20Rue%20des%20Coteaux%20de%20Chatron%2C%2078640%20Saint-Germain-de-la-Grange!5e0!3m2!1sfr!2sfr!4v1679943026704!5m2!1sfr!2sfr" 
-            allowfullscreen="" 
+            allowFullScreen="" 
             loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade"
+            referrerPolicy="no-referrer-when-downgrade"
             className={style.iframe}
           >
           </iframe>

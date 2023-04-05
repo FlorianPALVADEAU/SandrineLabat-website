@@ -192,16 +192,18 @@
             }
             #burger{
                 display: block;
-                margin-right: 15%;
+                position: fixed;
+                right: 5%;
+                top: 5%;
             }
             .links{
-                width: 100vw;
+                width: 35vw;
                 height: 100vh;
                 display: none;
                 align-items: flex-end;
                 justify-content: center;
                 flex-direction: column;
-                position: absolute;
+                position: fixed;
                 top: 0;
                 right: -0vw;
                 bottom: 0;

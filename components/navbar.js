@@ -32,7 +32,7 @@ export default function navbar() {
           <div className='burger' id={style.burger} ref={burger} onClick={()=>{handleBurger()}}>
             <span></span>
           </div>
-          <div className={`${style.links} ${burgerActive ? "active" : ""}`} ref={nav}>
+          <div className={`${style.links} ${burgerActive ? style.active : ""}`} ref={nav}>
               <Link href="#" className={style.link}>Accueil</Link>
               <Link href="#" className={style.link}>Shiatsu Humain</Link>
               <div className={style.dropdown}>
