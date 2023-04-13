@@ -1,0 +1,39 @@
+.reverse{
+    flex-direction: row-reverse !important;
+    .content{
+        text-align: right !important;
+        align-items: flex-end !important;
+    }
+}
+
+.contentBloc{
+    width: 80vw;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .img{
+        width: 45%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .content{
+        width: 45%;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        text-align: left;
+    }
+    .span{
+        height: 50%;
+        width: 1px;
+        background-color: #2E8FCF;
+        position: relative;
+        right: 0;
+    }
+}

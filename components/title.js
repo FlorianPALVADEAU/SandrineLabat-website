@@ -1,14 +1,14 @@
-import style from'@/styles/title.module.scss'
+import React from 'react'
+import stylesheet from'@/styles/title.module.scss'
 
 
-export default function title(firstTitle, subtitle, mainWord) {
+export default function title({coloredWord, firstTitle, subTitle, mainWord}) {
 
     return (
-        <div className={style.title}>
-            <h3 className={style.h3}>{firstTitle}</h3>
-            <h4 className={style.h4}>{subtitle}</h4>
-            <p className={style.mainWord}>{mainWord}</p>
-            <span className={style.span}></span>
+        <div className={stylesheet.title}>
+            <h3 className={stylesheet.firstTitle}><p className={stylesheet.coloredWord} >{coloredWord}</p>{firstTitle}</h3>
+            <h4 className={stylesheet.subTitle}>{subTitle}</h4>
+            <p className={stylesheet.mainWord}>{mainWord}</p>
         </div>
     )
   }
