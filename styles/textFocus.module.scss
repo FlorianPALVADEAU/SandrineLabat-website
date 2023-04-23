@@ -1,0 +1,48 @@
+.textFocus{
+    width: 60%;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .textFocustopLeft{
+        transform: scale(0.7);
+        position: absolute;
+        top: -9%;
+        left: 0;
+    }
+    .textFocusBottomRight{
+        transform: scale(0.7);
+        position: absolute;
+        bottom: -9%;
+        right: 0;
+    }
+
+    .textFocusContent{
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        p{
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 800px) {
+
+}
+
+@media screen and (max-width: 600px) {
+
+}

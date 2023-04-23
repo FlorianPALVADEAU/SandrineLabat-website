@@ -9,7 +9,6 @@ export default function imageText({image, text, reverse}) {
   const [reversed, SetReversed] = useState(reverse)
   const src = image.src
   useEffect(() => {
-    console.log(src);
     text.forEach(element => {
       TextPart(element)
     });
