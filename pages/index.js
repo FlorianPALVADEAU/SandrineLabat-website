@@ -10,7 +10,6 @@ import icon_handshake from '../assets/icons/icon_handshake.png'
 import icon_heart from '../assets/icons/icon_heart.png'
 import icon_mecanism from '../assets/icons/icon_mecanism.png'
 import icon_coffee from '../assets/icons/icon_coffee.png'
-import illustration_zen_photo from '../assets/images/illustration_zen_photo.jpg'
 
 // Components
 import Title from '../components/title'
@@ -47,9 +46,9 @@ export default function Home() {
       
       <div className={style.bienfaits}>
         <Title 
-            coloredWord={'Les bienfaits '}
-            firstTitle={"du shiatsu ?"}
-            mainWord={"Bienfaits"}
+          coloredWord={'Les bienfaits '}
+          firstTitle={"du shiatsu ?"}
+          mainWord={"Bienfaits"}
         />
         <div className={style.cardContainer}>
           <ImageTextCard 
@@ -74,26 +73,55 @@ export default function Home() {
         />
       </div>
 
-      <div className={style.statistiques} style={{backgroundImage: `url(${illustration_zen_photo})`}}>
-        <div className={style.statCard}>
-          <Image src={icon_handshake} alt='icone serrage de main'/>
-          <p className={style.stat}>+1500</p>
-          <p className={style.statName}>Clients enregistrés</p>
+      <div className={style.infoShiatsu}>
+        <Title 
+          coloredWord={'Quand'}
+          firstTitle={"faire une séance ?"}
+          mainWord={"Quand ?"}
+        />
+        <div className={style.infoShiatsuContent}>
+          <p>Le Shiatsu avant tout utilisé en prévention, est préconisé en entretien à chaque changement de saison. En cas de déséquilibre le praticien effectuera 3 à 5 séances espacées d'une semaine afin d'enlever les symptômes et progressivement aller au cœur du problème pour traiter la cause et obtenir un rééquilibrage en profondeur durable dans le temps. Les bienfaits physiques agiront en global sur l'individu et apporteront détente et bien-être intérieur.</p>
         </div>
-        <div className={style.statCard}>
-          <Image src={icon_heart} alt='icone coeur'/>
-          <p className={style.stat}>98%</p>
-          <p className={style.statName}>De satisfaction client</p>
+      </div>
+
+      <div className={style.statistiquesContainer}>
+        <Title 
+            coloredWord={''}
+            firstTitle={"Quelques statistiques..."}
+            mainWord={"Statistiques"}
+        />
+        <div className={style.statistiques}>
+          <div className={style.statCard}>
+            <Image src={icon_handshake} alt='icone serrage de main'/>
+            <p className={style.stat}>1500+</p>
+            <p className={style.statName}>Clients enregistrés</p>
+          </div>
+          <div className={style.statCard}>
+            <Image src={icon_heart} alt='icone coeur'/>
+            <p className={style.stat}>98%</p>
+            <p className={style.statName}>De satisfaction client</p>
+          </div>
+          <div className={style.statCard}>
+            <Image src={icon_mecanism} alt='icone mécanique'/>
+            <p className={style.stat}>7000+</p>
+            <p className={style.statName}>Heures de pratique</p>
+          </div>
+          <div className={style.statCard}>
+            <Image src={icon_coffee} alt='icon tasse de café'/>
+            <p className={style.stat}>800+</p>
+            <p className={style.statName}>Tasses de café</p>
+          </div>
         </div>
-        <div className={style.statCard}>
-          <Image src={icon_mecanism} alt='icone mécanique'/>
-          <p className={style.stat}>7000+</p>
-          <p className={style.statName}>Heures de pratique</p>
-        </div>
-        <div className={style.statCard}>
-          <Image src={icon_coffee} alt='icon tasse de café'/>
-          <p className={style.stat}>800+</p>
-          <p className={style.statName}>Tasses de café</p>
+      </div>
+
+      <div className={style.infoShiatsu}>
+        <Title 
+          coloredWord={'Avis '}
+          firstTitle={"clients"}
+          mainWord={"Clients"}
+        />
+        <div className={style.infoShiatsuContent}>
+          <p>Le Shiatsu avant tout utilisé en prévention, est préconisé en entretien à chaque changement de saison. En cas de déséquilibre le praticien effectuera 3 à 5 séances espacées d'une semaine afin d'enlever les symptômes et progressivement aller au cœur du problème pour traiter la cause et obtenir un rééquilibrage en profondeur durable dans le temps. Les bienfaits physiques agiront en global sur l'individu et apporteront détente et bien-être intérieur.</p>
         </div>
       </div>
     </>

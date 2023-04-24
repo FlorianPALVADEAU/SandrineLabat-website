@@ -1,20 +1,22 @@
 .textFocus{
     width: 60%;
+    height: auto;
     padding: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    overflow: hidden;
     .textFocustopLeft{
         transform: scale(0.7);
         position: absolute;
-        top: -9%;
+        top: -0;
         left: 0;
     }
     .textFocusBottomRight{
         transform: scale(0.7);
         position: absolute;
-        bottom: -9%;
+        bottom: -0;
         right: 0;
     }
 
@@ -44,5 +46,14 @@
 }
 
 @media screen and (max-width: 600px) {
-
+    .textFocus{
+        width: 85%;
+        .textFocusContent{
+            width: 90%;
+            p{
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+        }
+    }
 }

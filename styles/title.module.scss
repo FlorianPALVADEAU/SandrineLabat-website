@@ -4,6 +4,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 15px;
+    overflow: hidden;
     .firstTitle{
         font-size: 40px;
         font-weight: 400;
@@ -54,10 +56,21 @@
         .subTitle{
             display: none;
         }
+        .mainWord{
+            display: none;
+        }
     }
 }
 @media screen and (max-width: 600px) {
     .title{
         transform: scale(0.7);
+        overflow: hidden;
+        .firstTitle{
+            padding: 15px;
+            font-size: 30px;
+            .coloredWord{
+                overflow: hidden;
+            }
+        }
     }
 }

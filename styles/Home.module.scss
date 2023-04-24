@@ -26,14 +26,13 @@
 }
 
 .bienfaits{
-    height: 80vh;
+    height: 75vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
     margin-top: 25vh;
-    margin-bottom: 5%;
-
+    
     .cardContainer{
         width: 80%;
         display: flex;
@@ -43,48 +42,76 @@
     }
 }
 
-.statistiques{
-    width: 100vw;
-    height: 45vh;
+.infoShiatsu{
+    height: 35vh;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    background-image: url('../assets/images/illustration_zen_photo.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 15vh;
+    flex-direction: column;
+    margin-top: 30vh;
+    margin-bottom: 30vh;
 
-    .statCard{
-        width: 15%;
-        height: 60%;
+    .infoShiatsuContent{
+        width: 60%;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding: 35px;
-        border: 1.2px solid white;
-        color: white;
-        background-color: rgba(255, 255, 255, 0.068);
-        flex-wrap: wrap;
-        img{
-            height: 30%;
-            width: auto;
-        }
+        background-color: #e9f7ff5b;
+        border-radius: 25px;
 
-        .stat{
-            font-size: 52px;
-            font-weight: bold;
-        }
-
-        .statName{
-            font-style: italic;
+        p{
+            width: 85%;
+            text-align: center;
+            font-size: 18px;
+            padding: 35px;
         }
     }
 }
 
-
-
+.statistiquesContainer{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    .statistiques{
+        width: 100vw;
+        height: 45vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        background-image: url('../assets/images/illustration_zen_photo.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 8vh;
+        margin-bottom: 15vh;
+    
+        .statCard{
+            width: 300px;
+            height: 60%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            padding: 35px;
+            border: 1.2px solid white;
+            color: white;
+            background-color: rgba(255, 255, 255, 0.068);
+            img{
+                height: 30%;
+                width: auto;
+            }
+    
+            .stat{
+                font-size: 52px;
+                font-weight: bold;
+            }
+        }
+    }
+}
 
 
 
@@ -100,9 +127,53 @@
         margin-bottom: 5%;
     }
     .bienfaits{
-        height: 80vh;
+        height: 120vh;
+    }
+    .infoShiatsu{
+        height: 45vh;
+    }
+    .statistiquesContainer{
+        .statistiques{
+            height: 55vh;
+        }
     }
 }
+
+@media screen and (max-width: 1250px){
+    .infoShiatsu{
+        .infoShiatsuContent{
+            width: 80%;
+        }
+    }
+    .statistiquesContainer{
+        width: 100vw;
+        .statistiques{
+            width: 100vw;
+            height: 75vh;
+            margin-top: 8vh;
+            margin-bottom: 15vh;
+            .statCard{
+                height: 35%;
+                margin-right: 5%;
+                margin-left: 5%;
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .bienfaits{
+        height: 200vh;
+        width: 100%;
+        .cardContainer{
+            width: 80%;
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+}
+
 @media screen and (max-width: 800px){
     .shiatsuPresentation{
         height: 130vh;
@@ -132,6 +203,41 @@
         }
     }
     .bienfaits{
-        height: 120vh;
+        height: auto;
+        width: 100%;
+        font-size: 14px;
+    }
+    .infoShiatsu{
+        height: 55vh;
+    }
+    .statistiquesContainer{
+        .statistiques{
+            width: 100vw;
+            height: 125vh;
+            .statCard{
+                width: 60%;
+                height: 20%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    .infoShiatsu{
+        width: 100vw;
+        height: auto;
+        .infoShiatsuContent{
+            p{
+                font-size: 14px;
+                padding: 15px;
+            }
+        }
+    }
+    .statistiquesContainer{
+        .statistiques{
+            .statCard{
+                width: 80%;
+            }
+        }
     }
 }
