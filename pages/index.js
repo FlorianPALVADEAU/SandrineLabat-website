@@ -120,7 +120,7 @@ export default function Home() {
           firstTitle={"clients"}
           mainWord={"Clients"}
         />
-        <div className={style.infoShiatsuContent}>
+        <div className={style.clientNoteContainer}>
           <p>Le Shiatsu avant tout utilisé en prévention, est préconisé en entretien à chaque changement de saison. En cas de déséquilibre le praticien effectuera 3 à 5 séances espacées d'une semaine afin d'enlever les symptômes et progressivement aller au cœur du problème pour traiter la cause et obtenir un rééquilibrage en profondeur durable dans le temps. Les bienfaits physiques agiront en global sur l'individu et apporteront détente et bien-être intérieur.</p>
         </div>
       </div>

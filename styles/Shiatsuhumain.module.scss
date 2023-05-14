@@ -1,0 +1,63 @@
+.bottomSentence{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    .sentence{
+        font-weight: bold;
+    }
+    .span{
+        height: 1px;
+        width: 20%;
+        background-color: #2E8FCF;
+    }
+}
+
+.bienfaits{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 25vh;
+    
+    .cardContainer{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (max-width: 1500px){
+    .bienfaits{
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1250px){
+
+}
+
+@media screen and (max-width: 1000px){
+    .bienfaits{
+        width: 100%;
+        font-size: 14px;
+        .cardContainer{
+            width: 80%;
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+}
+
+@media screen and (max-width: 800px){
+}
+
+@media screen and (max-width: 600px){
+
+}
+    

@@ -33,8 +33,8 @@ export default function navbar() {
             <span></span>
           </div>
           <div className={`${style.links} ${burgerActive ? style.active : ""}`} ref={nav}>
-              <Link href="#" className={style.link}>Accueil</Link>
-              <Link href="#" className={style.link}>Shiatsu Humain</Link>
+              <Link href="/" className={style.link}>Accueil</Link>
+              <Link href="/shiatsuhumain" className={style.link}>Shiatsu Humain</Link>
               <div className={style.dropdown}>
                 <p href="#" className={style.link}>Soins Animaux</p>
                 <div className={style.dropdownActive}>
@@ -51,7 +51,7 @@ export default function navbar() {
                   <Link href="#" className={style.link}>Communication Animale</Link>
                 </div>
               </div>
-              <Link href="#" className={style.link}>Qui suis-je ?</Link>
+              <Link href="" className={style.link}>Qui suis-je ?</Link>
               <Link href="#" className={style.link}>Me Contacter</Link>
           </div>
       </nav>

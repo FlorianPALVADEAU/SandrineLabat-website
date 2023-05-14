@@ -1,0 +1,46 @@
+.disclaimer{
+    width: 100vw;
+    height: 15vh;
+    margin-top: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    p{
+        width:70%;
+        font-size: 14px;
+        color: red;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 800px) {
+    .disclaimer{
+        p{
+            font-size: 10px;   
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .textFocus{
+        width: 85%;
+        .textFocusContent{
+            width: 90%;
+            p{
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+        }
+    }
+}
