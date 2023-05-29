@@ -23,7 +23,7 @@ export default function imageText({image, text, reverse}) {
 
   return (
       <div ref={ref} className={`${stylesheet.contentBloc} ${reversed ? stylesheet.reverse : ""}`}>
-          <div style={{backgroundImage: `url(${src})`}} alt="image décorative" className={stylesheet.img}></div>
+          <div className={stylesheet.img} style={{backgroundImage: `url(${src})`}} alt="image décorative"></div>
           <div ref={p} className={stylesheet.content}></div>
           <span className={stylesheet.span}></span>
       </div>

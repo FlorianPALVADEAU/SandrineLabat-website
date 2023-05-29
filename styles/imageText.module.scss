@@ -1,5 +1,5 @@
 .reverse{
-    flex-direction: row-reverse !important;
+    flex-direction: row-reverse;
     .content{
         text-align: right !important;
         align-items: flex-end !important;
@@ -45,7 +45,7 @@
 }
 
 @media screen and (max-width: 1250px){
-    .contentBloc{
+    .contentBloc, .reverse{
         width: 80vw;
         height: 60%;
     
@@ -63,7 +63,7 @@
     }
 }
 @media screen and (max-width: 800px){
-    .contentBloc{
+    .contentBloc, .reverse{
         width: 80vw;
         height: 80%;
         flex-direction: column;
@@ -74,10 +74,10 @@
             width: 100%;
         }
         .content{
-            height: 52%;
+            height: auto;
             width: 100%;
             justify-content: center;
-            text-align: center;
+            text-align: center !important;
             p{
                 margin-bottom: 2%;
             }

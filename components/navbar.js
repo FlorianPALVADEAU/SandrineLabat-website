@@ -1,20 +1,53 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import style from'@/styles/navbar.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
 import humanLogo from '../assets/icons/human_logo_white.png'
-import { useState } from 'react'
 
 
-// const lastURLElement = window.location.href.substring(window.location.href.lastIndexOf('/') + 1)
 export default function navbar() {
-
+  const [pos, setPos] = useState("top")
   const [h1Content, seth1Content] = useState('Vers le chemin du bien être et de l\'équilibre')
   const [h2Content, seth2Content] = useState('Grandir, se préserver et vieillir dans les meileures conditions, c\'est la voie que propose le shiatsu')
   const [burgerActive, setburgerActive] = useState(false)
   const burger = React.useRef(null)
   const nav = React.useRef(null)
 
+  useEffect(() => {
+    var lastURLElement = window.location.href.substring(window.location.href.lastIndexOf('/') + 1)
+    if (lastURLElement === ''){
+      seth1Content('Vers le chemin du bien être et de l\'équilibre')
+      seth2Content('Grandir, se préserver et vieillir dans les meileures conditions, c\'est la voie que propose le shiatsu')
+    } else if (lastURLElement === 'shiatsu-humain'){
+      seth1Content('Shiatsu humain')
+      seth2Content('Découvrez le shiatsu humain sous tous ses angles')
+    } else if (lastURLElement === 'chevaux-anes-poneys'){
+      seth1Content('Chevaux, Poneys et Ânes')
+      seth2Content('Les soins que je peux apporter à ce type d\'animaux')
+    } else if (lastURLElement === 'chiens-chats'){
+      seth1Content('Chiens et chats')
+      seth2Content('Les soins que je peux apporter à ce type d\'animaux')
+    } else if (lastURLElement === 'idealement'){
+      seth1Content('Idéalement')
+      seth2Content('Découvrez les meilleures pratiques avant, pendant et après chaque séance !')
+    } else if (lastURLElement === 'contact'){
+      seth1Content('Me contacter')
+      seth2Content('Contactez-moi par mail ou téléphone')
+    } else if (lastURLElement === 'a-propos-de-moi'){
+      seth1Content('Qui suis-je ?')
+      seth2Content('Découvrez en plus à propos de moi !')
+    }
+
+    document.addEventListener("scroll", e => {
+      let scrolled = document.scrollingElement.scrollTop;
+      if (scrolled >= 5){
+         setPos("moved")
+      } else {
+         setPos("top")
+      }
+    })
+  }, []);
+  
   function handleBurger() {
     if (burger.current.classList.contains('cross')) {
       burger.current.classList.remove('cross')
@@ -34,13 +67,13 @@ export default function navbar() {
           </div>
           <div className={`${style.links} ${burgerActive ? style.active : ""}`} ref={nav}>
               <Link href="/" className={style.link}>Accueil</Link>
-              <Link href="/shiatsuhumain" className={style.link}>Shiatsu Humain</Link>
+              <Link href="/shiatsu-humain" className={style.link}>Shiatsu Humain</Link>
               <div className={style.dropdown}>
                 <p href="#" className={style.link}>Soins Animaux</p>
                 <div className={style.dropdownActive}>
-                  <Link href="#" className={style.link}>Chevaux, Poneys et Ânes</Link>
-                  <Link href="#" className={style.link}>Chiens et chats</Link>
-                  <Link href="#" className={style.link}>Idéalement</Link>
+                  <Link href="/shiatsu-animaux/chevaux-anes-poneys" className={style.link}>Chevaux, Poneys et Ânes</Link>
+                  <Link href="/shiatsu-animaux/chiens-chats" className={style.link}>Chiens et chats</Link>
+                  <Link href="/shiatsu-animaux/idealement" className={style.link}>Idéalement</Link>
                 </div>
               </div>
               <div className={style.dropdown}>

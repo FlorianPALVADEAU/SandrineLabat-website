@@ -44,7 +44,7 @@
 }
 
 .infoShiatsu{
-    height: 35vh;
+    height: 45vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,6 +66,25 @@
             text-align: center;
             font-size: 18px;
             padding: 35px;
+        }
+    }
+
+    .bottomSentence{
+        width: 50%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        .sentence{
+            font-weight: bold;
+            margin-bottom: 1%;
+            text-align: center;
+        }
+        .span{
+            height: 1px;
+            width: 20%;
+            background-color: #2E8FCF;
         }
     }
 }
@@ -232,6 +251,10 @@
                 font-size: 14px;
                 padding: 15px;
             }
+        }
+        .bottomSentence{
+            margin-top: 5%;
+            width: 70%;
         }
     }
     .statistiquesContainer{
