@@ -1,0 +1,256 @@
+.presentation{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15vh;
+    .content{
+        margin-top: 12vh;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        background-color: rgba(83, 166, 222, 0.103);
+        padding-top: 7%;
+        padding-bottom: 7%;
+        img{
+            border-radius: 10000px;
+            width: 350px;
+            height: 350px;
+            object-fit: cover;
+        }
+        .infoPresentation{
+            width: 40vw;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            margin-left: 5%;
+            h2{
+                margin-bottom: 5%;
+                font-weight: normal;
+            }
+            ul{
+                width: 100%;
+                li{
+                    width: 100%;
+                    margin-left: 2%;
+                    margin-bottom: 1%;
+                    span{
+                        font-size: 12px;
+                        font-style: italic;
+                    }
+                }
+            }
+            p{
+                margin-top: 5%;
+                width: 70%;
+            }
+            .linkContainer{
+                width: 70%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                margin-top: 10%;
+
+                a, .link{
+                    width: 30%;
+                    background-color: rgba(83, 166, 222, 0.829);
+                    padding: 10px;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+.reversed{
+    flex-direction: row-reverse !important;
+    .infoPresentation{
+        p{
+            text-align: right !important;
+            
+        }
+    }
+}
+
+.experiences{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1500px){
+    .presentation{
+        .content{
+            .infoPresentation{
+                .linkContainer{
+                    width: 90%;
+    
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1250px){
+    .presentation{
+        .content{
+            .infoPresentation{
+                p{
+                    margin-top: 5%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .reversed{
+        flex-direction: row-reverse !important;
+        .infoPresentation{
+            margin-left: 0;
+            margin-right: 10%;
+            p{
+                text-align: right !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .presentation{
+        .content{
+            flex-direction: column;
+            img{
+                border-radius: 10000px;
+                width: 50vw;
+                height: 50vw;
+                object-fit: cover;
+            }
+            .infoPresentation{
+                width: 80%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 5%;
+                text-align: center;
+                margin-left: 0;
+                margin-right: 0;
+                h2{
+                    margin-bottom: 5%;
+                    font-weight: normal;
+                }
+                ul{
+                    width: 95%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    li{
+                        width: 100%;
+                        margin-left: 2%;
+                        margin-bottom: 1%;
+                        span{
+                            font-size: 12px;
+                            font-style: italic;
+                        }
+                    }
+                }
+                p{
+                    margin-top: 5%;
+                    width: 80%;
+                }
+                .linkContainer{
+                    width: 100%;
+    
+                }
+            }
+        }
+    }
+    .reversed{
+        flex-direction: column !important;
+        .infoPresentation{
+            margin-left: 0;
+            margin-right: 10%;
+            p{
+                text-align: center !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    .presentation{
+        .content{
+            flex-direction: column;
+            .infoPresentation{
+                width: 80%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 5%;
+                text-align: left;
+                margin-left: 0;
+                margin-right: 0;
+                h2{
+                    margin-bottom: 5%;
+                    font-weight: normal;
+                }
+                ul{
+                    width: 95%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    li{
+                        width: 100%;
+                        margin-left: 2%;
+                        margin-bottom: 1%;
+                        span{
+                            font-size: 12px;
+                            font-style: italic;
+                        }
+                    }
+                }
+                p{
+                    margin-top: 15%;
+                    width: 100%;
+                }
+                .linkContainer{
+                    width: 100%;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin-top: 30%;
+    
+                    a, .link{
+                        width: 100%;
+                        margin-bottom: 5%;
+                    }
+                }
+            }
+        }
+    }
+    .reversed{
+        .infoPresentation{
+            p{
+                text-align: left !important;
+            }
+        }
+    }
+}
+    

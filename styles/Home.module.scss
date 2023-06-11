@@ -261,6 +261,11 @@
         .statistiques{
             .statCard{
                 width: 80%;
+                .stat{
+                    overflow: hidden;
+                    font-size: 30px;
+                    font-weight: bold;
+                }
             }
         }
     }

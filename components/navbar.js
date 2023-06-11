@@ -3,6 +3,7 @@ import style from'@/styles/navbar.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
 import humanLogo from '../assets/icons/human_logo_white.png'
+import humanLogoScrolled from '../assets/icons/human_logo.png'
 
 
 export default function navbar() {
@@ -37,16 +38,16 @@ export default function navbar() {
       seth1Content('Qui suis-je ?')
       seth2Content('Découvrez en plus à propos de moi !')
     }
-
     document.addEventListener("scroll", e => {
       let scrolled = document.scrollingElement.scrollTop;
-      if (scrolled >= 5){
-         setPos("moved")
+      if (scrolled >= 50){
+        setPos("moved")
       } else {
-         setPos("top")
+        setPos("top")
       }
     })
-  }, []);
+
+  });
   
   function handleBurger() {
     if (burger.current.classList.contains('cross')) {
@@ -60,9 +61,9 @@ export default function navbar() {
   return (
     <>
     <header className={style.header}>
-      <nav className={style.navBar}>
-          <Image src={humanLogo} className={style.logo} alt='logo'/>
-          <div className='burger' id={style.burger} ref={burger} onClick={()=>{handleBurger()}}>
+      <nav className={`${style.navBar} ${pos === 'top' ? '' : style.scrolled}`} >
+          <Image src={pos === 'top' ? humanLogo : humanLogoScrolled} className={style.logo} alt='logo'/>
+          <div  id={style.burger} ref={burger} onClick={()=>{handleBurger()}}>
             <span></span>
           </div>
           <div className={`${style.links} ${burgerActive ? style.active : ""}`} ref={nav}>
@@ -84,8 +85,8 @@ export default function navbar() {
                   <Link href="#" className={style.link}>Communication Animale</Link>
                 </div>
               </div>
-              <Link href="" className={style.link}>Qui suis-je ?</Link>
-              <Link href="#" className={style.link}>Me Contacter</Link>
+              <Link href="/a-propos-de-moi" className={style.link}>Qui suis-je ?</Link>
+              <Link href="/contact" className={style.link}>Me Contacter</Link>
           </div>
       </nav>
       <div className={style.bottomContent}>

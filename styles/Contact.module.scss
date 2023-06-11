@@ -1,0 +1,173 @@
+@keyframes swing {
+    0%, 40%{
+        transform: translateY(-20px);
+    }
+    40%, 60%{
+        transform: translateY(0px);
+    }
+    60%, 100%{
+        transform: translateY(-20px);
+    }
+
+}
+
+.mainText{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10vh;
+
+    h4{
+        font-weight: 200;
+        font-size: 16px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    h1{
+        font-weight: 500;
+        font-size: 45px;
+        margin-top: -0.2%;
+        margin-bottom: 1%;
+    }
+    h3{
+        font-weight: 400;
+        font-size: 18px;
+        color: rgb(58, 58, 58);
+        
+    }
+    p{
+        margin-top: 0.5%;
+        font-size: 25px;
+    }
+}
+
+.formPart{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .asideContent{
+        width: 30%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        .content{
+            width: 100%;
+            height: auto;
+            margin-bottom: 5%;
+            margin-top: 5%;
+            h2{
+                margin-bottom: 2%;
+            }
+            p{
+                width: 70%;
+                margin-top: 0.5%;
+                margin-bottom: 0.5%;
+            }
+        }
+    }
+    .formContact{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        box-shadow: 5px 7px 20px rgba(0, 0, 0, 0.24);
+        margin-right: 3%;
+        margin-left: 3%;
+        .inputContainer{
+            width: 100%;
+            height: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 3%;
+            label{
+                width: 80%;
+                margin-bottom: 0.5%;
+                .requiredStar{
+                    color: red;
+                    font-weight: bold;
+                }
+            }
+            input, textarea{
+                width: 80%;
+                border-radius: 5px;
+                border: 0.5px solid black;
+                resize: vertical;
+                padding: 10px;
+            }
+            input{
+                height: 30px;
+            }
+            textarea{
+                height: 75px;
+            }
+        }
+        .inputSubmit{
+            width: 80%;
+            height: 45px;
+            border: 0;
+            outline: none;
+            border-radius: 5px;
+            font-size: 20px;
+
+        }
+        .requiredDesc{
+            position: relative;
+            bottom: -60%;
+            left: -35%;
+            font-size: 10px;
+            font-style: italic;
+        }
+    }
+}
+.calendlyButton{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10%;
+    h2{
+        font-weight: 500;
+        font-size: 40px;
+        margin-top: -0.2%;
+        margin-bottom: 1%;
+    }
+    .scrollIcon{
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+        animation: swing 2s infinite ease-in-out;
+        margin-top: 2%;
+    }
+    a{
+        font-size: 20px;
+        width: 12%;
+        height: 5vh;
+        color: white;
+        background-color: #2E8FCF;
+        border: 0;
+        border-radius: 5px;
+        outline: navajowhite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        margin-top: 2%;
+    }
+}
