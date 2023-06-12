@@ -25,7 +25,7 @@ export default function Idealement() {
                 />
                 <ul className={style.content}>
                     <li>{`Evitez de travailler votre animal de manière trop intensive, car son rythme cardiaque doit être celui d'un animal au repos et les traces de transpirations doivent être sèches.`}</li>
-                    <li>Si votre animal est "sale", laissez-le tel quel, il est préférable de ne pas le brosser avant le soin.</li>
+                    <li>{`Si votre animal est "sale", laissez-le tel quel, il est préférable de ne pas le brosser avant le soin.`}</li>
                     <li>{`Si les pieds ou pattes sont pleins de boue enlevez le maximum en évitant de doucher. S'ils sont mouillés alors douchés en évitant de dépasser les zones déjà mouillées.`}</li>
                     <li>{`45 mn avant le soin, ne pas donner de ration de nourriture à votre animal. Pour un cheval, il peut néanmoins manger de l'herbe et/ou du foin comme à son habitude.`}</li>
                 </ul>
