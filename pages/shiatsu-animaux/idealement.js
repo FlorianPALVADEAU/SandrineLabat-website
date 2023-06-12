@@ -1,4 +1,5 @@
-// Images and stylesheets
+// Images and stylesheetsimport Head from 'next/head';
+import Head from 'next/head';
 import style from'@/styles/Idealement.module.scss'
 import home from'@/styles/Home.module.scss'
 import photo_massage from '../../assets/images/photo_massage.webp'
@@ -16,8 +17,23 @@ import Disclaimer from '../../components/disclaimer'
 
 
 export default function Idealement() {
+    const keywords = [
+        "séance", "animal", "travail intensif", "rythme cardiaque", "transpirations", "brosser", "animal sale",
+        "pieds", "pattes", "boue", "doucher", "ration de nourriture", "cheval", "manger", "herbe", "foin",
+        "pré", "box", "carrière", "lieu calme", "écurie", "adaptation", "liberté", "expression",
+        "libérer", "rouler", "s'ébrouer", "repos", "travail monté", "travail à pied", "promenades intensives",
+        "sollicitation", "mouvements libres", "compétition", "transport", "changement", "conscience",
+        "soin", "animal de compagnie", "santé animale"
+    ];
+
     return (
         <>
+            <Head>
+                <title>Idéalement, avant la séance - la séance - Idéalement, pendant la séance - Idéalement, après la séance</title>
+                <meta name="description" content="Evitez de travailler votre animal de manière trop intensive, laissez-le tel quel s'il est 'sale', enlevez le maximum de boue des pieds ou pattes, ne pas donner de ration de nourriture 45 mn avant le soin, réalisez le soin dans un endroit calme que votre animal connaît, offrez un soin sans l'imposer, laissez votre animal s'exprimer pendant la séance, libérez votre animal après la séance, recommandez 48 H de repos après un soin, conseillez un minimum de 5 jours entre le soin et une compétition ou un transport." />
+                <meta name="keywords" content={keywords.join(", ")} />
+            </Head>
+
             <div className={style.before}>
                 <Title 
                 coloredWord={'Idéalement, avant'}

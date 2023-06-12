@@ -3,7 +3,7 @@ import stylesheet from'@/styles/imageText.module.scss'
 import { useEffect } from 'react';
 
 
-export default function ImageText({image, text, reverse}) {
+export default function imageText({image, text, reverse}) {
   const ref = React.useRef()
   const p = React.useRef()
   const [reversed, SetReversed] = useState(reverse)

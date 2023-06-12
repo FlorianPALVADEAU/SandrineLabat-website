@@ -15,6 +15,7 @@ import ImageTextCard from '../../components/imageTextCard'
 import TextFocus from '../../components/textFocus'
 import Disclaimer from '../../components/disclaimer'
 import Link from 'next/link'
+import Head from 'next/head'
 
 
 export default function ChiensChats () {
@@ -27,6 +28,12 @@ export default function ChiensChats () {
 
     return (
         <>
+            <Head>
+                <title>Chiens et Chats - Mise en contexte</title>
+                <meta name="description" content="Découvrez les bienfaits du shiatsu pour les chiens et les chats. Apprenez-en plus sur les conditions idéales d'un soin énergétique et les réactions des animaux. Stimulez les défenses naturelles de votre animal avec des séances de shiatsu régulières." />
+                <meta name="keywords" content="shiatsu, chiens, chats, bienfaits, soin énergétique, défenses naturelles, réactions, animaux, conditions idéales" />
+            </Head>
+        
             <div className='presentation'> 
                 <Title 
                 coloredWord={'Mise'}
@@ -149,3 +156,7 @@ export default function ChiensChats () {
         </>
     )
 }
+
+export const title = "Bienfaits du Shiatsu pour chiens et chats";
+export const description = "Découvrez les bienfaits du Shiatsu pour chiens et chats et apprenez comment cette méthode de soins douce et naturelle peut améliorer la santé et le bien-être de vos animaux de compagnie.";
+export const keywords = ["shiatsu pour chiens", "shiatsu pour chats", "soins naturels pour animaux", "bien-être animal", "santé animale", "médecine alternative pour animaux", "médecine douce pour animaux", "équilibre énergétique des animaux"];

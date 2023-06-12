@@ -24,9 +24,14 @@ export default function Shiatsuhumain() {
 
     return (
         <>
+        
             <Head>
                 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"/>
                 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+                <title>Contactez-moi ! - Sandrine Labat</title>
+                <meta name="description" content="Besoin d'un rendez-vous ? Contactez-moi pour toutes vos questions et pour prendre rendez-vous. Des réponses à vos questions sur le Shiatsu. Bookez en 3 clics !"/>
+                <meta name="keywords" content="contact, rendez-vous, questions, prise de rendez-vous, Shiatsu, tarifs, informations, sms, discuter, pluie et beau temps, bookez en 3 clics"/>
+                
             </Head>
             <>
                 <div className={style.mainText}>

@@ -1,4 +1,5 @@
 // Images and stylesheets
+import Head from 'next/head';
 import Image from 'next/image'
 import style from'@/styles/Home.module.scss'
 import shiatsuPresentationImage from '../assets/images/shiatsuPresentation.jpg'
@@ -20,6 +21,11 @@ import TextFocus from '../components/textFocus'
 export default function Home() {
   return (
     <>
+    <Head>
+      <title>Le Shiatsu - Sandrine Labat</title>
+      <meta name="description" content="Revenons sur les origines du shiatsu pour mieux comprendre son fonctionnement et son utilité. Découvrez les bienfaits du shiatsu, les moments propices pour faire une séance, quelques statistiques intéressantes et les avis des clients."/>
+      <meta name="keywords" content="Sandrine Labat, sandrine, labat, labat shiatsu, sandrine shiatsu, shiatsu, origines du shiatsu, fonctionnement du shiatsu, utilité du shiatsu, bienfaits du shiatsu, moments propices pour faire une séance de shiatsu, statistiques du shiatsu, avis clients, équilibre énergétique, système immunitaire, souplesse des tissus, systèmes respiratoires, systèmes nerveux, systèmes sanguins, systèmes hormonaux, soulagement de douleurs, détente, bien-être intérieur, auto-guérison, prévention, rééquilibrage, symptômes, problèmes structurels, problèmes musculaires, problèmes ligamentaires, problèmes digestifs, problèmes de peau, problèmes psychologiques."/>
+    </Head>
       <div className={style.shiatsuPresentation}>
         <Title 
           coloredWord={'Le Shiatsu,'}

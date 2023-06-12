@@ -1,4 +1,5 @@
 // Images and stylesheets
+import Head from 'next/head';
 import style from'@/styles/AProposDeMoi.module.scss'
 import home from'@/styles/Home.module.scss'
 import photo_massage from '../assets/images/photo_massage.webp'
@@ -19,7 +20,15 @@ import Image from 'next/image'
 
 export default function Aproposdemoi() {
     const numberRef = React.useRef()
-
+    const keywords = [
+        "Soin énergétique Equin", "Canin", "Félin", "Certifiée de l'école Scottish School for Horses - Liz Eddy",
+        "Shiatsu Humain Thérapeutique et de Relaxation", "Certifiée de l'Ecole Nonindo - Isabelle Laading",
+        "Réflexologie Cranio Sacré", "Certifiée par Max Albert Mio - instructeur en kinésiologie animale, réflexologie cranio sacré",
+        "Yvelines", "Indre", "Indre-et-Loire", "Loire-et-Cher", "Ain",
+        "numéro de téléphone", "contact", "équitation", "passion", "chevaux", "shiatsu", "bien-être",
+        "médecine traditionnelle", "kiné", "ostéopathie", "formation équine", "professionnels",
+        "animaux", "propriétaire", "patientèle humaine", "expériences"
+    ];
     function copyToClipBoard() {
         navigator.clipboard.writeText(numberRef.current.innerHTML);
         alert("Numéro de téléphone copié ! 😊");
@@ -27,6 +36,11 @@ export default function Aproposdemoi() {
     }
     return (
         <>
+            <Head>
+                <title>Sandrine LABAT, à votre écoute ! - Et si on se présentait ?</title>
+                <meta name="description" content="Moi, c'est Sandrine LABAT, et je suis practicienne en : Soin énergétique Equin, Canin et Félin (Certifiée de l'école Scottish School for Horses - Liz Eddy), Shiatsu Humain Thérapeutique et de Relaxation (Certifiée de l'Ecole Nonindo - Isabelle Laading), Réflexologie Cranio Sacré (Certifiée par Max Albert Mio - instructeur en kinésiologie animale, réflexologie cranio sacré). J'officie sur la commune des Yvelines (78) et ses environs (28, 27, 91, 95), mais aussi dans l'Indre, l'Indre-et-Loire, le Loire-et-Cher et l'Ain!" />
+                <meta name="keywords" content={keywords.join(", ")} />
+            </Head>
             <div className={style.presentation}>
                 <Title 
                 coloredWord={'Sandrine LABAT,'}
