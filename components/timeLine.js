@@ -22,7 +22,7 @@ export default function Timeline() {
             <h3 className="vertical-timeline-element-title">École Nonindo France</h3>
             <h4 className="vertical-timeline-element-subtitle">71320 St Eugène</h4>
             <p>
-            Psychologie Chinoise avec Isabelle Laading <br/> <i>(que j'applique aussi aux animaux)</i>.
+            Psychologie Chinoise avec Isabelle Laading <br/> <i>{`(que j'applique aussi aux animaux)`}</i>.
             </p>
         </VerticalTimelineElement>
 
@@ -48,7 +48,7 @@ export default function Timeline() {
             <h3 className="vertical-timeline-element-title">Soin aux pendules, méthode 4D</h3>
             <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
             <p>
-            Olivier Frémann - thérapeute et énergéticien humain <br/> <i>(que j'applique aussi aux animaux)</i>
+            Olivier Frémann - thérapeute et énergéticien humain <br/> <i>{`(que j'applique aussi aux animaux)`}</i>
             </p>
         </VerticalTimelineElement>
 
@@ -61,7 +61,7 @@ export default function Timeline() {
             <h3 className="vertical-timeline-element-title">Communication connectée</h3>
             <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
             <p>
-            Bébés, enfants et animaux avec Stéphan Duthoit - Kinésiologie <br/> <i>(que j'applique aussi aux animaux)</i>
+            Bébés, enfants et animaux avec Stéphan Duthoit - Kinésiologie <br/> <i>{`(que j'applique aussi aux animaux)`}</i>
             </p>
         </VerticalTimelineElement>
 
@@ -74,7 +74,7 @@ export default function Timeline() {
             <h3 className="vertical-timeline-element-title">Kinésiologie</h3>
             <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
             <p>
-            Olivier Frémann - thérapeute et énergéticien humain <br/> <i>(que j'applique aussi aux animaux)</i>
+            Olivier Frémann - thérapeute et énergéticien humain <br/> <i>{`(que j'applique aussi aux animaux)`}</i>
             </p>
         </VerticalTimelineElement>
 

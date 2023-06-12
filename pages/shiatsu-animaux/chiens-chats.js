@@ -71,7 +71,7 @@ export default function ChiensChats () {
                     href="./idealement"
                     className='redirectButton'
                     >
-                        Découvrez les conditions idéales d'un soin énergétique
+                        {`Découvrez les conditions idéales d'un soin énergétique`}
                     </Link>
                 </div>
             </div>
@@ -107,23 +107,23 @@ export default function ChiensChats () {
                 />
                 <div className='content'>
                     <p className='firstChild'>
-                    La plupart des chiens ne sont pas habitués à ce type de touché, il est donc important que le maître soit présent afin que le chien soit en toute confiance, car nous le rappelons le Shiatsu doit être pratiqué avec l'adhésion de l'individu, donc sans muselière ni attache. 
+                    {`La plupart des chiens ne sont pas habitués à ce type de touché, il est donc important que le maître soit présent afin que le chien soit en toute confiance, car nous le rappelons le Shiatsu doit être pratiqué avec l'adhésion de l'individu, donc sans muselière ni attache.`}
                     La première séance aura donc toute son importance pour faire comprendre le chien notre intention. 
-                    Certains vont vouloir jouer et seront turbulents, d'autres vont être inquiets et vont changer sans cesse de position.
+                    {`Certains vont vouloir jouer et seront turbulents, d'autres vont être inquiets et vont changer sans cesse de position.`}
                     <br/>
-                    Ils vont s'assoir, se coucher, se relever, se mettre sur le dos. Il n'est pas question de lui imposer un protocole, d'où l'importance de le respecter et l'écouter tout en adaptant 
+                    {`Ils vont s'assoir, se coucher, se relever, se mettre sur le dos. Il n'est pas question de lui imposer un protocole, d'où l'importance de le respecter et l'écouter tout en adaptant 
                     les techniques à l'instant présent. Parfois, lors de la première séance, cet épisode de relâchement est précédé d'une réaction de surprise comme si la circulation 
-                    de l'énergie provoquait fourmillements ou picotements.
+                    de l'énergie provoquait fourmillements ou picotements.`}
 
                     </p>
                     <button className='button' ref={button} style={{display: 'block'}} onClick={()=>{ displayAll(); }}>
                         Découvrir les réactions des chats
                     </button>
                     <p ref={lastPart} className='lastChild' style={{display: 'none'}}>
-                    Pour les chats c'est un peu plus complexes car ils sont indépendants mais ils ont besoin de se sentir bien et en confiance aussi. la séance se pratiquera dans une pièce qu'ils connaissent mais pas trop grande car ils savent aussi très bien se cloitrer et se cacher ! 
+                    {`Pour les chats c'est un peu plus complexes car ils sont indépendants mais ils ont besoin de se sentir bien et en confiance aussi. la séance se pratiquera dans une pièce qu'ils connaissent mais pas trop grande car ils savent aussi très bien se cloitrer et se cacher ! 
                     les réactions peuvent être plus vives, comme une queue qui s'agite et qui tape pour me prévenir ou encore un coup de patte pour me dire que la zone touchée n'est pas autorisé !
                     Et il peut arriver que je sois mordue mais encore une fois c'est un moyen de me dire non, je dois alors adapter mon shiatsu, ce qui est essentiel !
-                    Après une séance, le chat peut soit se poser dans un coin qu'il affectionne, soit là où le shiatsu s'est terminé ou encore souhaite sortir afin de reprendre possessions de ses sensations !
+                    Après une séance, le chat peut soit se poser dans un coin qu'il affectionne, soit là où le shiatsu s'est terminé ou encore souhaite sortir afin de reprendre possessions de ses sensations !`}
 
                     </p>
                 </div>
@@ -139,7 +139,7 @@ export default function ChiensChats () {
                 text={["En entretien pour anticiper et éviter que les problèmes arrivent ou en cas de déséquilibre manifesté par des symptômes comme : raideurs, tensions, sciatiques, boiteries, perte d'état,  pellicule, poils terne, perte de joie de vivre, problèmes comportemental, … Plusieurs séances (généralement trois) sont nécessaires pour constater une amélioration de l'état général (même si on assiste parfois à un changement dès la première séance)."]}
                 />
                 <div className={home.bottomSentence}>
-                    <p className={home.sentence}>Il devrait avant tout être pratiqué en prévention afin de stimuler les défenses naturelles de l'organisme et maintenir ainsi l'équilibre énergétique pour une forme physique et mentale toute l'année.</p>
+                    <p className={home.sentence}>{`Il devrait avant tout être pratiqué en prévention afin de stimuler les défenses naturelles de l'organisme et maintenir ainsi l'équilibre énergétique pour une forme physique et mentale toute l'année.`}</p>
                     <span className={home.span}></span>
                 </div>
             </div>

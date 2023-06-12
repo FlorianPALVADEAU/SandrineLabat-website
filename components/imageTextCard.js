@@ -3,7 +3,7 @@ import stylesheet from'@/styles/imageTextCard.module.scss'
 import { useEffect } from 'react';
 
 
-export default function imageTextCard({image, text}) {
+export default function ImageTextCard({image, text}) {
   const p = React.useRef()
   const src = image.src
   useEffect(() => {

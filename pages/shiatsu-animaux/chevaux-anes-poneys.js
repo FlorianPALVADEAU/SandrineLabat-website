@@ -75,7 +75,7 @@ export default function ChevauxAnesPoneys () {
                     href="./idealement" 
                     className='redirectButton'
                     >
-                        Découvrez les conditions idéales d'un soin énergétique
+                        {`Découvrez les conditions idéales d'un soin énergétique`}
                     </Link>
                 </div>
             </div>
@@ -131,19 +131,19 @@ export default function ChevauxAnesPoneys () {
                         <br/>
                         La première séance aura donc toute son importance pour faire comprendre au cheval notre intention.
                         <br/>
-                        Le cheval est un animal inquiet de part sa nature originelle, les sensations sous la peau, comme des fourmillements ou picotements sont dans un premier temps désagréables alors pour les éviter, il va se décaler, me pousser ou m'éviter, les oreilles vont bouger, un regard vigilant, la queue peut fouailler et si je vais au delà de ses limites, le cheval peut en venir aux dents ou aux coups de pieds. 
+                        {`Le cheval est un animal inquiet de part sa nature originelle, les sensations sous la peau, comme des fourmillements ou picotements sont dans un premier temps désagréables alors pour les éviter, il va se décaler, me pousser ou m'éviter, les oreilles vont bouger, un regard vigilant, la queue peut fouailler et si je vais au delà de ses limites, le cheval peut en venir aux dents ou aux coups de pieds.`}
                         <br/>
-                        La plus part du temps c'est à titre informatif c'est à dire sans réel impact, il est libre de m'avertir et le propriétaire ne doit en aucun cas le sanctionner !
+                        {`La plus part du temps c'est à titre informatif c'est à dire sans réel impact, il est libre de m'avertir et le propriétaire ne doit en aucun cas le sanctionner !`}
                     </p>
                     <button className='button' ref={button} style={{display: 'block'}} onClick={()=>{ displayAll(); }}>
                         Afficher la deuxième partie
                     </button>
                     <p ref={lastPart} className='lastChild' style={{display: 'none'}}>
-                    Puis dans un second temps la circulation énergétique opère et le cheval se détend alors arrive les bâillements et les mâchouillements, le regard s'apaise, les oreilles dans le sens de l'écoute, certains sont participatif même et me montrent les endroits sur lesquels je dois m'attarder ... alors c'est une douce communication qui s'installe entre le cheval et moi. 
+                    {`Puis dans un second temps la circulation énergétique opère et le cheval se détend alors arrive les bâillements et les mâchouillements, le regard s'apaise, les oreilles dans le sens de l'écoute, certains sont participatif même et me montrent les endroits sur lesquels je dois m'attarder ... alors c'est une douce communication qui s'installe entre le cheval et moi.`} 
                     <br/>
-                    Il n'est pas question de lui imposer un protocole, d'où l'importance de le respecter et l'écouter tout en adaptant les techniques à l'instant présent.
+                    {`Il n'est pas question de lui imposer un protocole, d'où l'importance de le respecter et l'écouter tout en adaptant les techniques à l'instant présent.`}
                     <br/>
-                    Dès la deuxième séance les chevaux s'abandonnent totalement et manifestent dès le début leur intérêt pour la personne qui leur a fait découvrir ce bien-être. Certains même attendent leur tour avec impatience ...
+                    {`Dès la deuxième séance les chevaux s'abandonnent totalement et manifestent dès le début leur intérêt pour la personne qui leur a fait découvrir ce bien-être. Certains même attendent leur tour avec impatience ...`}
                     </p>
                 </div>
             </div>
@@ -158,7 +158,7 @@ export default function ChevauxAnesPoneys () {
                 text={["Je conseillerai des séances à chaque intersaison (4 à 5 par an) pour maintenir un bon réseau énergétique. Le nombre de Shiatsu peut augmenter en fonction du travail fourni ou du rythme de vie du cheval (compétitions - transport fréquent), dès que vous remarquez des signes de mal être ou encore pour anticiper et éviter que les problèmes arrivent ou en cas de déséquilibre manifesté par des symptômes comme : raideurs, tensions, sciatiques, boiteries, perte d'état,  pellicule, poils terne, perte de joie de vivre, problèmes comportemental, ..., vous connaissez votre cheval ! Plusieurs séances (généralement trois) sont nécessaires pour constater une amélioration de l'état général (même si on assiste parfois à un changement spectaculaire dès la première séance)"]}
                 />
                 <div className={home.bottomSentence}>
-                    <p className={home.sentence}>Il devrait avant tout être pratiqué en prévention afin de stimuler les défenses naturelles de l'organisme et maintenir ainsi l'équilibre énergétique pour une forme physique et mentale toute l'année.</p>
+                    <p className={home.sentence}>{`Il devrait avant tout être pratiqué en prévention afin de stimuler les défenses naturelles de l'organisme et maintenir ainsi l'équilibre énergétique pour une forme physique et mentale toute l'année.`}</p>
                     <span className={home.span}></span>
                 </div>
             </div>

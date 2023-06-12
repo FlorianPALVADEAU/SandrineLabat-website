@@ -30,10 +30,10 @@ export default function Shiatsuhumain() {
             </Head>
             <>
                 <div className={style.mainText}>
-                    <h4>Besoin d'un rendez-vous ?</h4>
+                    <h4>{`Besoin d'un rendez-vous ?`}</h4>
                     <h1>Contactez-moi</h1>
                     <h3>Je suis ici pour répondre à toutes vos questions.</h3>
-                    <h3>Pour la prise de rendez-vous, c'est aussi ici ! </h3>
+                    <h3>{`Pour la prise de rendez-vous, c'est aussi ici ! `}</h3>
                     <p>🙂</p>
                 </div>
                 <div className={style.formPart}>
@@ -71,7 +71,7 @@ export default function Shiatsuhumain() {
                 </div>
 
                 <div className={style.calendlyButton}>
-                    <h2>Besoin d'un rendez-vous ?</h2>
+                    <h2>{`Besoin d'un rendez-vous ?`}</h2>
                     <p className={style.scrollIcon}>↓</p>
                     <a href='https://calendly.com/florian-plvd/rendez-vous-shiatsu' target='_blank'>
                         Bookez en 3 clics !

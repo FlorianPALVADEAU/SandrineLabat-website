@@ -37,22 +37,22 @@ export default function Aproposdemoi() {
                     <Image className={style.image} src={profile_picture} alt="Sandrine labat photo de profil"/>
 
                     <div className={style.infoPresentation}>
-                        <h2>Moi, c'est <b>Sandrine LABAT</b>, et je suis practicienne en :</h2>
+                        <h2>{`Moi, c'est <b>Sandrine LABAT</b>, et je suis practicienne en :`}</h2>
                         <ul>
                             <li>
                                 Soin énergétique Equin, Canin et Félin&nbsp;<br/>
-                                <span>(Certifiée de l'école Scottish School for Horses - Liz Eddy)</span>
+                                <span>{`(Certifiée de l'école Scottish School for Horses - Liz Eddy)`}</span>
                             </li>
                             <li>
                                 Shiatsu Humain Thérapeutique et de Relaxation &nbsp;<br/>
-                                <span>(Certifiée de l'Ecole Nonindo - Isabelle Laading)</span>
+                                <span>{`(Certifiée de l'Ecole Nonindo - Isabelle Laading)`}</span>
                             </li>
                             <li>
                                 Réflexologie Cranio Sacré&nbsp;<br/>
                                 <span>(Certifiée par Max Albert Mio - instructeur en kinésiologie animale, réflexologie cranio sacré)</span>
                             </li>
                         </ul>
-                        <p>J'officie sur la commune des Yvelines (78) et ses environs (28, 27, 91, 95), mais aussi dans l'Indre, l'Indre-et-Loire, le Loire-et-Cher et l'Ain !</p>
+                        <p>{`J'officie sur la commune des Yvelines (78) et ses environs (28, 27, 91, 95), mais aussi dans l'Indre, l'Indre-et-Loire, le Loire-et-Cher et l'Ain !`}</p>
                         <div className={style.linkContainer}>
                             <a href='mailto:sandrinelabat@free.fr'>Envoyez-moi un mail</a>
                             <div ref={numberRef} className={style.link} onClick={()=>{copyToClipBoard()}}>06-86-44-92-47</div>
@@ -82,11 +82,11 @@ export default function Aproposdemoi() {
 
                     <div className={style.infoPresentation}>
                         <p>
-                            C'est en 2008 que tout se met en place ...<br/>
-                            Après plus de 30 ans d'équitation, (CSO, Dressage, Cross et Horse-ball) j'ai eu quelques accidents. Les différents blocages et douleurs non solutionnés par la médecine traditionnelle, kiné et ostéopathie, ... m'ont poussé personnellement vers le shiatsu. Ma rencontre avec Christelle Pernot a été un réel bouleversement en tout point de vue !!<br/><br/>
-                            J'ai suivi une étudiante en shiatsu équin pendant un an et de voir le bien-être du cheval lors de ces séances, puis mon bien-être après ces séances m'ont permis de me lancer dans la formation équine et de décider alors, d'en faire mon métier.<br/><br/>
-                            A partir de ce moment-là, je vais de belles rencontres en belles rencontres, que ce soit les étudiant(e)s de ma promotion, les formateurs et Liz Eddy, Isabelle Laading ou encore les professionnels qui acceptent de nous accueillir pour les stages.<br/><br/>
-                            Aujourd'hui encore, je poursuis mon chemin et il est parsemé de belles rencontres, que ce soit avec les animaux (chevaux, chiens et chats), leur propriétaire ou ma patientèle humaine.<br/>
+                            {`C'est en 2008 que tout se met en place ...`}<br/>
+                            {`Après plus de 30 ans d'équitation, (CSO, Dressage, Cross et Horse-ball) j'ai eu quelques accidents. Les différents blocages et douleurs non solutionnés par la médecine traditionnelle, kiné et ostéopathie, ... m'ont poussé personnellement vers le shiatsu. Ma rencontre avec Christelle Pernot a été un réel bouleversement en tout point de vue !!`}<br/><br/>
+                            {`J'ai suivi une étudiante en shiatsu équin pendant un an et de voir le bien-être du cheval lors de ces séances, puis mon bien-être après ces séances m'ont permis de me lancer dans la formation équine et de décider alors, d'en faire mon métier.`}<br/><br/>
+                            {`A partir de ce moment-là, je vais de belles rencontres en belles rencontres, que ce soit les étudiant(e)s de ma promotion, les formateurs et Liz Eddy, Isabelle Laading ou encore les professionnels qui acceptent de nous accueillir pour les stages.`}<br/><br/>
+                            {`Aujourd'hui encore, je poursuis mon chemin et il est parsemé de belles rencontres, que ce soit avec les animaux (chevaux, chiens et chats), leur propriétaire ou ma patientèle humaine.`}<br/>
                         </p>
                     </div>
                 </div>

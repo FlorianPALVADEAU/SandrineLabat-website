@@ -2,7 +2,7 @@ import React from 'react'
 import stylesheet from'@/styles/title.module.scss'
 
 
-export default function title({coloredWord, firstTitle, subTitle, mainWord}) {
+export default function Title({coloredWord, firstTitle, subTitle, mainWord}) {
 
     return (
         <div className={stylesheet.title}>

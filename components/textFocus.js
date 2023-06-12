@@ -6,7 +6,7 @@ import topLeft from '../assets/icons/top_left.png'
 import bottomRight from '../assets/icons/bottom_right.png'
 
 
-export default function textFocus({text}) {
+export default function TextFocus({text}) {
   const p = React.useRef()
   useEffect(() => {
     text.forEach(element => {

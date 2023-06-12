@@ -8,7 +8,7 @@ import mail from '../assets/icons/mail.png'
 import facebook from '../assets/icons/facebook.png'
 
 
-export default function footer() {
+export default function Footer() {
     return (
       <>
       <footer className={style.footer}>

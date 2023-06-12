@@ -1,7 +1,7 @@
 import style from'@/styles/clientNote.module.scss'
 
 
-export default function clientNote({imgUrl, note, name}) {
+export default function ClientNote({imgUrl, note, name}) {
 
     return (
         <div className={style.title}>
