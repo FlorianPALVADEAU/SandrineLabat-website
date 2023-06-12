@@ -2,10 +2,10 @@
 import Image from 'next/image'
 import style from'@/styles/Home.module.scss'
 import shiatsuPresentationImage from '../assets/images/shiatsuPresentation.jpg'
-import illustration_vegetables_photo from '../assets/images/illustration_vegetables_photo.jpg'
-import illustration_stretching_photo from '../assets/images/illustration_stretching_photo.jpg'
-import illustration_kid_photo from '../assets/images/illustration_kid_photo.jpg'
-import illustration_neck_pain_photo from '../assets/images/illustration_neck_pain_photo.jpg'
+import illustration_vegetables_photo from '../assets/images/illustration_vegetables_photo.webp'
+import illustration_stretching_photo from '../assets/images/illustration_stretching_photo.webp'
+import illustration_kid_photo from '../assets/images/illustration_kid_photo.webp'
+import illustration_neck_pain_photo from '../assets/images/illustration_neck_pain_photo.webp'
 import icon_handshake from '../assets/icons/icon_handshake.png'
 import icon_heart from '../assets/icons/icon_heart.png'
 import icon_mecanism from '../assets/icons/icon_mecanism.png'
@@ -69,7 +69,7 @@ export default function Home() {
           />
         </div>
         <TextFocus 
-          text={["Soulagement de douleurs diversesLe praticien, en rééquilibrant le réseau énergétique, aura pour effet de stimuler les défenses naturelles de l'organisme, faire lâcher les tensions physiques mais également mentales,  apporter détente et bien-être intérieur favorisant ainsi le processus d'auto-guérison. Le Shiatsu par son approche et son action globale peut avoir des effets bénéfiques sur de nombreux problèmes.  Ils peuvent être de types structurels, musculaires, ligamentaires, digestifs, de peaux ou psychologiques.  Ils peuvent d'ailleurs être dus au stress ou à la nervosité."]}
+          text={["Le praticien, en rééquilibrant le réseau énergétique, aura pour effet de stimuler les défenses naturelles de l'organisme, faire lâcher les tensions physiques mais également mentales,  apporter détente et bien-être intérieur favorisant ainsi le processus d'auto-guérison. Le Shiatsu par son approche et son action globale peut avoir des effets bénéfiques sur de nombreux problèmes.  Ils peuvent être de types structurels, musculaires, ligamentaires, digestifs, de peaux ou psychologiques.  Ils peuvent d'ailleurs être dus au stress ou à la nervosité."]}
         />
       </div>
 

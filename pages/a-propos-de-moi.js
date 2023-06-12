@@ -1,8 +1,8 @@
 // Images and stylesheets
 import style from'@/styles/AProposDeMoi.module.scss'
 import home from'@/styles/Home.module.scss'
-import photo_massage from '../assets/images/photo_massage.png'
-import profile_picture from '../assets/images/photo_horses.png'
+import photo_massage from '../assets/images/photo_massage.webp'
+import profile_picture from '../assets/images/photo_horses.webp'
 import Link from 'next/link'
 import React from 'react'
 
@@ -37,7 +37,7 @@ export default function Aproposdemoi() {
                     <Image className={style.image} src={profile_picture} alt="Sandrine labat photo de profil"/>
 
                     <div className={style.infoPresentation}>
-                        <h2>{`Moi, c'est <b>Sandrine LABAT</b>, et je suis practicienne en :`}</h2>
+                        <h2>{`Moi, c'est`} <b>Sandrine LABAT</b>, et je suis practicienne en :</h2>
                         <ul>
                             <li>
                                 Soin énergétique Equin, Canin et Félin&nbsp;<br/>

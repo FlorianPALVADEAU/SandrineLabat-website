@@ -1,44 +1,21 @@
 import React, { useEffect, useState, useRef } from 'react';
-import style from'@/styles/navbar.module.scss'
+import style from '@/styles/navbar.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
 import humanLogo from '../assets/icons/human_logo_white.png'
 import humanLogoScrolled from '../assets/icons/human_logo.png'
-
+import { useRouter } from 'next/router';
 
 export default function Navbar() {
   const [pos, setPos] = useState("top");
-  const [h1Content, seth1Content] = useState('Vers le chemin du bien être et de l\'équilibre');
-  const [h2Content, seth2Content] = useState('Grandir, se préserver et vieillir dans les meilleures conditions, c\'est la voie que propose le shiatsu');
-  const [burgerActive, setburgerActive] = useState(false);
+  const [h1Content, setH1Content] = useState('Vers le chemin du bien être et de l\'équilibre');
+  const [h2Content, setH2Content] = useState('Grandir, se préserver et vieillir dans les meilleures conditions, c\'est la voie que propose le shiatsu');
+  const [burgerActive, setBurgerActive] = useState(false);
   const burger = useRef(null);
   const nav = useRef(null);
+  const router = useRouter();
 
   useEffect(() => {
-    var lastURLElement = window.location.href.substring(window.location.href.lastIndexOf('/') + 1);
-    if (lastURLElement === '') {
-      seth1Content('Vers le chemin du bien être et de l\'équilibre');
-      seth2Content('Grandir, se préserver et vieillir dans les meilleures conditions, c\'est la voie que propose le shiatsu');
-    } else if (lastURLElement === 'shiatsu-humain') {
-      seth1Content('Shiatsu humain');
-      seth2Content('Découvrez le shiatsu humain sous tous ses angles');
-    } else if (lastURLElement === 'chevaux-anes-poneys') {
-      seth1Content('Chevaux, Poneys et Ânes');
-      seth2Content('Les soins que je peux apporter à ce type d\'animaux');
-    } else if (lastURLElement === 'chiens-chats') {
-      seth1Content('Chiens et chats');
-      seth2Content('Les soins que je peux apporter à ce type d\'animaux');
-    } else if (lastURLElement === 'idealement') {
-      seth1Content('Idéalement');
-      seth2Content('Découvrez les meilleures pratiques avant, pendant et après chaque séance !');
-    } else if (lastURLElement === 'contact') {
-      seth1Content('Me contacter');
-      seth2Content('Contactez-moi par mail ou téléphone');
-    } else if (lastURLElement === 'a-propos-de-moi') {
-      seth1Content('Qui suis-je ?');
-      seth2Content('Découvrez en plus à propos de moi !');
-    }
-
     const handleScroll = () => {
       let scrolled = document.scrollingElement.scrollTop;
       if (scrolled >= 50) {
@@ -61,50 +38,90 @@ export default function Navbar() {
     } else {
       burger.current.classList.add('cross');
     }
-    setburgerActive(!burgerActive);
+    setBurgerActive(!burgerActive);
   }
+
+  useEffect(() => {
+    const handleURLChange = (url) => {
+      const lastURLElement = url.substring(url.lastIndexOf('/') + 1);
+      if (lastURLElement === '') {
+        setH1Content('Vers le chemin du bien être et de l\'équilibre');
+        setH2Content('Grandir, se préserver et vieillir dans les meilleures conditions, c\'est la voie que propose le shiatsu');
+      } else if (lastURLElement === 'shiatsu-humain') {
+        setH1Content('Shiatsu humain');
+        setH2Content('Découvrez le shiatsu humain sous tous ses angles');
+      } else if (lastURLElement === 'chevaux-anes-poneys') {
+        setH1Content('Chevaux, Poneys et Ânes');
+        setH2Content('Les soins que je peux apporter à ce type d\'animaux');
+      } else if (lastURLElement === 'chiens-chats') {
+        setH1Content('Chiens et chats');
+        setH2Content('Les soins que je peux apporter à ce type d\'animaux');
+      } else if (lastURLElement === 'idealement') {
+        setH1Content('Idéalement');
+        setH2Content('Découvrez les meilleures pratiques avant, pendant et après chaque séance !');
+      } else if (lastURLElement === 'contact') {
+        setH1Content('Me contacter');
+        setH2Content('Contactez-moi par mail ou téléphone');
+      } else if (lastURLElement === 'a-propos-de-moi') {
+        setH1Content('Qui suis-je ?');
+        setH2Content('Découvrez en plus à propos de moi !');
+      }
+    };
+
+    handleURLChange(router.pathname);
+
+    const handleRouteChange = (url) => {
+      handleURLChange(url);
+    };
+
+    router.events.on('routeChangeComplete', handleRouteChange);
+
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+    };
+  }, []);
 
   return (
     <>
-    <header className={style.header}>
-      <nav className={`${style.navBar} ${pos === 'top' ? '' : style.scrolled}`} >
-          <Image src={pos === 'top' ? humanLogo : humanLogoScrolled} className={style.logo} alt='logo'/>
-          <div  id={style.burger} ref={burger} onClick={handleBurger}>
+      <header className={style.header}>
+        <nav className={`${style.navBar} ${pos === 'top' ? '' : style.scrolled}`} >
+          <Image priority src={pos === 'top' ? humanLogo : humanLogoScrolled} className={style.logo} alt='logo'/>
+          <div id={style.burger} ref={burger} onClick={handleBurger}>
             <span></span>
           </div>
-          <div className={`${style.links} ${burgerActive ? style.active : ""}`} ref={nav}>
-              <Link href="/" className={style.link}>Accueil</Link>
-              <Link href="/shiatsu-humain" className={style.link}>Shiatsu Humain</Link>
-              <div className={style.dropdown}>
-                <p href="#" className={style.link}>Soins Animaux</p>
-                <div className={style.dropdownActive}>
-                  <Link href="/shiatsu-animaux/chevaux-anes-poneys" className={style.link}>Chevaux, Poneys et Ânes</Link>
-                  <Link href="/shiatsu-animaux/chiens-chats" className={style.link}>Chiens et chats</Link>
-                  <Link href="/shiatsu-animaux/idealement" className={style.link}>Idéalement</Link>
-                </div>
+          <div className={`${style.links} ${burgerActive ? style.active : ''}`} ref={nav}>
+            <Link href="/" className={style.link}>Accueil</Link>
+            <Link href="/shiatsu-humain" className={style.link}>Shiatsu Humain</Link>
+            <div className={style.dropdown}>
+              <p href="#" className={style.link}>Soins Animaux</p>
+              <div className={style.dropdownActive}>
+                <Link href="/shiatsu-animaux/chevaux-anes-poneys" className={style.link}>Chevaux, Poneys et Ânes</Link>
+                <Link href="/shiatsu-animaux/chiens-chats" className={style.link}>Chiens et chats</Link>
+                <Link href="/shiatsu-animaux/idealement" className={style.link}>Idéalement</Link>
               </div>
-              <div className={style.dropdown}>
-                <p href="#" className={style.link}>Autres Soins</p>
-                <div className={style.dropdownActive}>
-                  <Link href="#" className={style.link}>Soin 4D</Link>
-                  <Link href="#" className={style.link}>Réflexo Crânio Sacré</Link>
-                  <Link href="#" className={style.link}>Communication Animale</Link>
-                </div>
+            </div>
+            <div className={style.dropdown}>
+              <p href="#" className={style.link}>Autres Soins</p>
+              <div className={style.dropdownActive}>
+                <Link href="#" className={style.link}>Soin 4D</Link>
+                <Link href="#" className={style.link}>Réflexo Crânio Sacré</Link>
+                <Link href="#" className={style.link}>Communication Animale</Link>
               </div>
-              <Link href="/a-propos-de-moi" className={style.link}>Qui suis-je ?</Link>
-              <Link href="/contact" className={style.link}>Me Contacter</Link>
+            </div>
+            <Link href="/a-propos-de-moi" className={style.link}>Qui suis-je ?</Link>
+            <Link href="/contact" className={style.link}>Me Contacter</Link>
           </div>
-      </nav>
-      <div className={style.bottomContent}>
-        <div className={style.content}>
-          <h1 className={style.h1}>{h1Content}</h1>
-          <h2 className={style.h2}>{h2Content}</h2>
-        </div>
+        </nav>
+        <div className={style.bottomContent}>
+          <div className={style.content}>
+            <h1 className={style.h1}>{h1Content}</h1>
+            <h2 className={style.h2}>{h2Content}</h2>
+          </div>
 
-        <Link href='#' className={style.discoverMore}>En découvrir plus</Link>
-        <p className={style.scrollIcon}>↓</p>
-      </div>
-    </header>
+          <Link href="#" className={style.discoverMore}>En découvrir plus</Link>
+          <p className={style.scrollIcon}>↓</p>
+        </div>
+      </header>
     </>
   );
 }

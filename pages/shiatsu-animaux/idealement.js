@@ -1,11 +1,11 @@
 // Images and stylesheets
 import style from'@/styles/Idealement.module.scss'
 import home from'@/styles/Home.module.scss'
-import photo_massage from '../../assets/images/photo_massage.png'
-import illustration_vegetables_photo from '../../assets/images/illustration_vegetables_photo.jpg'
-import illustration_stretching_photo from '../../assets/images/illustration_stretching_photo.jpg'
-import illustration_kid_photo from '../../assets/images/illustration_kid_photo.jpg'
-import illustration_neck_pain_photo from '../../assets/images/illustration_neck_pain_photo.jpg'
+import photo_massage from '../../assets/images/photo_massage.webp'
+import illustration_vegetables_photo from '../../assets/images/illustration_vegetables_photo.webp'
+import illustration_stretching_photo from '../../assets/images/illustration_stretching_photo.webp'
+import illustration_kid_photo from '../../assets/images/illustration_kid_photo.webp'
+import illustration_neck_pain_photo from '../../assets/images/illustration_neck_pain_photo.webp'
 
 // Components
 import Title from '../../components/title'
