@@ -14,7 +14,64 @@ export default function Navbar() {
   const burger = useRef(null);
   const nav = useRef(null);
   const router = useRouter();
-
+  const mainChoices = [
+    {
+      name:'Accueil',
+      url:'/'
+    },
+    {
+      name:'Shiatsu Humain',
+      url:'/shiatsu-humain'
+    },
+    {
+      name:'Soins Animaux',
+      url:null,
+      new_choices:1
+    },
+    {
+      name:'Autres Soins',
+      url:null,
+      new_choices:2
+    },
+    {
+      name:'Qui Suis-je ?',
+      url:'/a-propos-de-moi'
+    },
+    {
+      name:'Me Contacter',
+      url:'/contact'
+    }
+  ]
+  const secondChoices = [
+    [
+      {
+        name:'Chevaux, Ânes et Poneys',
+        url:'/shiatsu-animaux/chevaux-anes-poneys'
+      },
+      {
+        name:'Chiens et Chats',
+        url:'/shiatsu-animaux/chiens-chats'
+      },
+      {
+        name:'Idéalement',
+        url:'/shiatsu-animaux/idealement'
+      }
+    ],
+    [
+      {
+        name:'Soins 4D',
+        url:'#'
+      },
+      {
+        name:'Reflexo Crânio Sacré',
+        url:'#'
+      },
+      {
+        name:'Communication Animale',
+        url:'#'
+      }
+    ]
+  ]
   useEffect(() => {
     const handleScroll = () => {
       let scrolled = document.scrollingElement.scrollTop;
@@ -37,8 +94,47 @@ export default function Navbar() {
       burger.current.classList.remove('cross');
     } else {
       burger.current.classList.add('cross');
+      handleNavBar()
     }
     setBurgerActive(!burgerActive);
+  }
+
+  function handleNavBar() {
+    nav.current.innerHTML = '';
+    var links = document.createElement('div');
+    links.classList.add(style.links);
+    mainChoices.forEach(el => {
+      var link = document.createElement('a');
+      link.classList.add(style.link)
+      link.href = el.url !== null ? el.url : '#';
+      link.innerHTML = el.name;
+      if (el.url === null && el.new_choices) {
+        link.addEventListener('click', () => {
+          handleNewNavBarContent(el.new_choices);
+        });
+      }
+      nav.current.appendChild(link);
+    });
+  }
+  
+  function handleNewNavBarContent(params) {
+    nav.current.innerHTML = '';
+    var links = document.createElement('div');
+    links.classList.add(style.links);
+    var returnButton = document.createElement('div');
+    returnButton.classList.add(style.returnButton);
+    returnButton.innerHTML = '⬅ Retour'
+    returnButton.addEventListener('click', () => {
+      handleNavBar();
+    });
+    secondChoices[params-1].forEach(el => {
+      var link = document.createElement('a');
+      link.classList.add(style.link)
+      link.href = el.url !== null ? el.url : '#';
+      link.innerHTML = el.name;
+      nav.current.appendChild(link);
+    });
+    nav.current.appendChild(returnButton);
   }
 
   useEffect(() => {
@@ -86,7 +182,7 @@ export default function Navbar() {
       <header className={style.header}>
         <nav className={`${style.navBar} ${pos === 'top' ? '' : style.scrolled}`} >
           <Image priority src={pos === 'top' ? humanLogo : humanLogoScrolled} className={style.logo} alt='logo'/>
-          <div id={style.burger} ref={burger} onClick={handleBurger}>
+          <div id={`${style.burger}`} className='burger' ref={burger} onClick={handleBurger}>
             <span></span>
           </div>
           <div className={`${style.links} ${burgerActive ? style.active : ''}`} ref={nav}>
