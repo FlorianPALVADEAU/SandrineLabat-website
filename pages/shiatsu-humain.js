@@ -53,8 +53,8 @@ export default function Shiatsuhumain() {
             text={["Il devrait avant tout être pratiqué en prévention afin de stimuler les défenses naturelles de l'organisme et maintenir ainsi l'équilibre énergétique pour une forme physique et mentale toute l'année. Il est conseillé de faire 3 séances rapprochées (à 7 jours d'intervalles) pour commencer ainsi le corps prends pleinement connaissance du protocole. Dès lors une confiance s'installe entre le praticien et le patient, le corps demande à l'esprit de lâcher prise pour libérer les tensions. Par la suite, le shiatsu de saison peut-être proposé, entre 4 à 5 shiatsu par an pour rééquilibré l'énergétique du corps et de l'esprit. Si le patient ressent le besoin de shiatsu intermédiaires alors il sera le bienvenu !"]}
             />
             <div className={style.bottomSentence}>
-            <p className={style.sentence}>Une séance dure environ 1h15 et 1h45 (pour la 1ère séance)</p>
-            <span className={style.span}></span>
+                <p className={style.sentence}>Une séance dure environ 1h15 et 1h45 (pour la 1ère séance)</p>
+                <span className={style.span}></span>
             </div>
         </div>
 

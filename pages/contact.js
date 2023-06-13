@@ -46,11 +46,11 @@ export default function Shiatsuhumain() {
                     <form className={style.formContact}>
                         <div className={style.inputContainer}>
                             <label for="name">Votre Nom <span className={style.requiredStar}>*</span></label>
-                            <input type="text" name="name" required/>
+                            <input type="text" name="name" required autoComplete='true'/>
                         </div>
                         <div className={style.inputContainer}>
                             <label for="email">Votre adresse e-mail <span className={style.requiredStar}>*</span></label>
-                            <input type="email" name="email" required/>
+                            <input type="email" name="email" required autoComplete='true'/>
                         </div>
                         <div className={style.inputContainer}>
                             <label for="message">Votre Message <span className={style.requiredStar}>*</span></label>

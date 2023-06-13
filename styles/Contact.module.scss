@@ -171,3 +171,160 @@
         margin-top: 2%;
     }
 }
+
+@media screen and (max-width: 1250px){
+    .formPart{
+        margin-left: 3.5vw;
+        .asideContent{
+            width: 40%;
+        }
+        .formContact{
+            
+            .requiredDesc{
+                bottom: -60%;
+                left: -33%;
+            }
+        }
+    }
+    .calendlyButton{
+        width: 100%;
+        margin-bottom: 10%;
+        h2{
+            font-weight: 500;
+            font-size: 30px;
+            margin-top: -0.2%;
+            margin-bottom: 1%;
+        }
+        a{
+            font-size: 16px;
+            width: 12%;
+            height: 5vh;
+            border-radius: 5px;
+            margin-top: 2%;
+        }
+    }
+}
+@media screen and (max-width: 1000px){
+    .formPart{
+        margin-left: 1.5vw;
+        .asideContent{
+            width: 40%;
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            .content{
+                width: 100%;
+                height: auto;
+                margin-bottom: 5%;
+                margin-top: 5%;
+                h2{
+                    margin-bottom: 2%;
+                }
+                p{
+                    width: 70%;
+                    margin-top: 0.5%;
+                    margin-bottom: 0.5%;
+                }
+            }
+        }
+        .formContact{
+            width: 35%;
+            .requiredDesc{
+                bottom: -60%;
+                left: -33%;
+            }
+        }
+    }
+    .calendlyButton{
+        width: 100%;
+        margin-bottom: 10%;
+        h2{
+            font-weight: 500;
+            font-size: 30px;
+            margin-top: -0.2%;
+            margin-bottom: 1%;
+        }
+        a{
+            font-size: 16px;
+            width: 15%;
+            height: 6vh;
+            border-radius: 5px;
+            margin-top: 2%;
+        }
+    }
+}
+@media screen and (max-width: 800px){
+    .formPart{
+        width: 100%;
+        flex-direction: column;
+        .asideContent{
+            display: none;
+        }
+        .formContact{
+            width: 80%;
+            .requiredDesc{
+                position: relative;
+                bottom: -60%;
+                left: -35%;
+                font-size: 10px;
+                font-style: italic;
+            }
+        }
+    }
+    .calendlyButton{
+        width: 100%;
+        margin-bottom: 10%;
+        h2{
+            font-weight: 500;
+            font-size: 30px;
+            margin-top: -0.2%;
+            margin-bottom: 1%;
+        }
+        a{
+            font-size: 16px;
+            width: 22%;
+            height: 6.5vh;
+            border-radius: 5px;
+            margin-top: 2%;
+        }
+    }
+}
+@media screen and (max-width: 600px){
+    .formPart{
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        .asideContent{
+            display: none;
+        }
+        .formContact{
+            width: 85%;
+            margin-top: 15%;
+            margin-bottom: 15%;
+            .requiredDesc{
+                position: relative;
+                bottom: -40%;
+                left: -30%;
+                font-size: 10px;
+                font-style: italic;
+            }
+        }
+    }
+    .calendlyButton{
+        width: 100%;
+        margin-bottom: 10%;
+        h2{
+            font-weight: 500;
+            font-size: 26px;
+            margin-top: -0.2%;
+            margin-bottom: 1%;
+        }
+        a{
+            font-size: 16px;
+            width: 35%;
+            height: 5vh;
+        }
+    }
+}

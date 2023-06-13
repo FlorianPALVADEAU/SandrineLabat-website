@@ -9,7 +9,7 @@
 
     .bottomSentence{
         width: 100%;
-        height: 5%;
+        height: auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -20,6 +20,7 @@
         .span{
             height: 1px;
             width: 20%;
+            margin-top: 2vh;
             background-color: #2E8FCF;
         }
     }
@@ -27,7 +28,7 @@
 
 
 .bienfaits{
-    height: 75vh;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,6 +36,8 @@
     margin-top: 25vh;
     
     .cardContainer{
+        margin-top: 7vh;
+        margin-bottom: 5vh;
         width: 80%;
         display: flex;
         justify-content: space-between;
@@ -44,7 +47,7 @@
 }
 
 .infoShiatsu{
-    height: 45vh;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -121,13 +124,18 @@
             color: white;
             background-color: rgba(255, 255, 255, 0.068);
             img{
+                overflow: hidden;
                 height: 30%;
                 width: auto;
             }
-    
+            
             .stat{
+                overflow: hidden;
                 font-size: 52px;
                 font-weight: bold;
+            }
+            p{
+                overflow: hidden;
             }
         }
     }

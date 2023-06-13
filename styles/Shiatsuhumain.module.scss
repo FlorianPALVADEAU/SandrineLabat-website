@@ -17,7 +17,7 @@
 }
 
 .bienfaits{
-    height: 50vh;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,6 +25,8 @@
     margin-top: 25vh;
     
     .cardContainer{
+        margin-top: 7vh;
+        margin-bottom: 5vh;
         width: 80%;
         display: flex;
         justify-content: space-between;
@@ -33,12 +35,6 @@
     }
 }
 
-
-@media screen and (max-width: 1500px){
-    .bienfaits{
-        height: auto;
-    }
-}
 
 @media screen and (max-width: 1250px){
 
