@@ -1,0 +1,29 @@
+.list{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    .content{
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: left;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .list{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20vh;
+        margin-bottom: 20vh;
+        .content{
+            width: 80%;
+            height: auto;
+        }
+    }
+}

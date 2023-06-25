@@ -60,15 +60,15 @@ export default function Navbar() {
     [
       {
         name:'Soins 4D',
-        url:'#'
+        url:'/autres-soins/soins-4D'
       },
       {
         name:'Reflexo Crânio Sacré',
-        url:'#'
+        url:'/autres-soins/reflexo-cranio-sacre'
       },
       {
         name:'Communication Animale',
-        url:'#'
+        url:'/autres-soins/communication-animale'
       }
     ]
   ]
@@ -154,13 +154,22 @@ export default function Navbar() {
         setH2Content('Les soins que je peux apporter à ce type d\'animaux');
       } else if (lastURLElement === 'idealement') {
         setH1Content('Idéalement');
-        setH2Content('Découvrez les meilleures pratiques avant, pendant et après chaque séance !');
+        setH2Content('Découvrez les meilleures pratiques à réaliser avant, pendant et après chaque séance !');
       } else if (lastURLElement === 'contact') {
         setH1Content('Me contacter');
         setH2Content('Contactez-moi par mail ou téléphone');
       } else if (lastURLElement === 'a-propos-de-moi') {
         setH1Content('Qui suis-je ?');
         setH2Content('Découvrez en plus à propos de moi !');
+      } else if (lastURLElement === 'soins-4D') {
+        setH1Content('Soins 4D');
+        setH2Content('Découvrez en plus sur les soins 4D !');
+      } else if (lastURLElement === 'reflexo-cranio-sacre') {
+        setH1Content('Réflexologie Crânio-sacrée');
+        setH2Content('Découvrez-en plus sur la réflexologie crânio-sacrée !');
+      } else if (lastURLElement === 'communication-animale') {
+        setH1Content('Communication Animale');
+        setH2Content('Découvrez en plus sur la communication animale !');
       }
     };
 
@@ -199,9 +208,9 @@ export default function Navbar() {
             <div className={style.dropdown}>
               <p href="#" className={style.link}>Autres Soins</p>
               <div className={style.dropdownActive}>
-                <Link href="#" className={style.link}>Soin 4D</Link>
-                <Link href="#" className={style.link}>Réflexo Crânio Sacré</Link>
-                <Link href="#" className={style.link}>Communication Animale</Link>
+                <Link href="/autres-soins/soins-4D" className={style.link}>Soin 4D</Link>
+                <Link href="/autres-soins/reflexo-cranio-sacre" className={style.link}>Réflexo Crânio Sacré</Link>
+                <Link href="/autres-soins/communication-animale" className={style.link}>Communication Animale</Link>
               </div>
             </div>
             <Link href="/a-propos-de-moi" className={style.link}>Qui suis-je ?</Link>

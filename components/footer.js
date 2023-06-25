@@ -29,8 +29,8 @@ export default function Footer() {
                 <Link className={style.li} href='/shiatsu-humain'>Shiatsu Humains</Link>
                 <Link className={style.li} href='#'>Soins Animaux</Link>
                 <Link className={style.li} href='#'>Autres soins</Link>
-                <Link className={style.li} href='#'>Qui suis-je ?</Link>
-                <Link className={style.li} href='#'>Me contacter</Link>
+                <Link className={style.li} href='/a-propos-de-moi'>Qui suis-je ?</Link>
+                <Link className={style.li} href='/contact'>Me contacter</Link>
               </ul>
             </div>
             <div className={style.list}>

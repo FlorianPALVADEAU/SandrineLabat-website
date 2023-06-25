@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }) {
       <meta name="author" content="Sandrine LABAT"/>
     </Head>
     <Layout>
-      <Component {...pageProps} />
+      <Component {...pageProps}/>
     </Layout>
     </>
   )

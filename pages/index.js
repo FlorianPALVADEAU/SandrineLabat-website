@@ -11,6 +11,7 @@ import icon_handshake from '../assets/icons/icon_handshake.png'
 import icon_heart from '../assets/icons/icon_heart.png'
 import icon_mecanism from '../assets/icons/icon_mecanism.png'
 import icon_coffee from '../assets/icons/icon_coffee.png'
+import { useEffect } from 'react';
 
 // Components
 import Title from '../components/title'
@@ -19,13 +20,15 @@ import ImageTextCard from '../components/imageTextCard'
 import TextFocus from '../components/textFocus'
 
 export default function Home() {
+
+
   return (
     <>
-    <Head>
-      <title>Le Shiatsu - Sandrine Labat</title>
-      <meta name="description" content="Revenons sur les origines du shiatsu pour mieux comprendre son fonctionnement et son utilité. Découvrez les bienfaits du shiatsu, les moments propices pour faire une séance, quelques statistiques intéressantes et les avis des clients."/>
-      <meta name="keywords" content="Sandrine Labat, sandrine, labat, labat shiatsu, sandrine shiatsu, shiatsu, origines du shiatsu, fonctionnement du shiatsu, utilité du shiatsu, bienfaits du shiatsu, moments propices pour faire une séance de shiatsu, statistiques du shiatsu, avis clients, équilibre énergétique, système immunitaire, souplesse des tissus, systèmes respiratoires, systèmes nerveux, systèmes sanguins, systèmes hormonaux, soulagement de douleurs, détente, bien-être intérieur, auto-guérison, prévention, rééquilibrage, symptômes, problèmes structurels, problèmes musculaires, problèmes ligamentaires, problèmes digestifs, problèmes de peau, problèmes psychologiques."/>
-    </Head>
+      <Head>
+        <title>Le Shiatsu - Sandrine Labat</title>
+        <meta name="description" content="Revenons sur les origines du shiatsu pour mieux comprendre son fonctionnement et son utilité. Découvrez les bienfaits du shiatsu, les moments propices pour faire une séance, quelques statistiques intéressantes et les avis des clients."/>
+        <meta name="keywords" content="Sandrine Labat, sandrine, labat, labat shiatsu, sandrine shiatsu, shiatsu, origines du shiatsu, fonctionnement du shiatsu, utilité du shiatsu, bienfaits du shiatsu, moments propices pour faire une séance de shiatsu, statistiques du shiatsu, avis clients, équilibre énergétique, système immunitaire, souplesse des tissus, systèmes respiratoires, systèmes nerveux, systèmes sanguins, systèmes hormonaux, soulagement de douleurs, détente, bien-être intérieur, auto-guérison, prévention, rééquilibrage, symptômes, problèmes structurels, problèmes musculaires, problèmes ligamentaires, problèmes digestifs, problèmes de peau, problèmes psychologiques."/>
+      </Head>
       <div className={style.shiatsuPresentation}>
         <Title 
           coloredWord={'Le Shiatsu,'}
@@ -130,6 +133,11 @@ export default function Home() {
           {/* <p>Le Shiatsu avant tout utilisé en prévention, est préconisé en entretien à chaque changement de saison. En cas de déséquilibre le praticien effectuera 3 à 5 séances espacées d'une semaine afin d'enlever les symptômes et progressivement aller au cœur du problème pour traiter la cause et obtenir un rééquilibrage en profondeur durable dans le temps. Les bienfaits physiques agiront en global sur l'individu et apporteront détente et bien-être intérieur.</p> */}
         </div>
       </div>
+
+
+      <div className={style.color1}></div>
+      <div className={style.color2}></div>
+      <div className={style.color3}></div>
     </>
   )
 }
