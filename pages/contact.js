@@ -2,24 +2,26 @@
 import Head from 'next/head';
 import style from'@/styles/Contact.module.scss'
 import React, { useEffect, useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 
 export default function Shiatsuhumain() {
-    // const sendEmail = (e) => {
-    //     e.preventDefault();
+    const form = React.useRef(null);
+    const sendEmail = (e) => {
+        e.preventDefault();
     
-    //     emailjs.sendForm('service_strkf42', 'template_ka44otn', form.current, 'LAg0wiCOFY0B9vnzr')
-    //       .then((result) => {
-    //         console.log(result, "Successfully sent !");
-    //         form.current.style = 'display: flex; justify-content: center; align-items: center; background-color: #76C776; color: #fff; font-size: 20px;'
-    //         form.current.innerHTML = ' <p>😊</p><h3 style="margin-top: 2%">Mail Sent Successfully!</h3><p style="font-size: 14px; font-style: italic; margin-top: 2%">Thank you</p>'
-    //       }, (error) => {
-    //         console.log(error.text);
-    //         form.current.style = 'display: flex; justify-content: center; align-items: center; background-color: #C93A3B; color: #fff; font-size: 20px;'
-    //         form.current.innerHTML = ' <p>😕</p><h3 style="margin-top: 2%">Uh oh... Something went wrong.</h3><p style="font-size: 14px; font-style: italic; margin-top: 2%">Try again later !</p>'
-    //       });
+        emailjs.sendForm('service_43qonam', 'template_ka44otn', form.current, 'LAg0wiCOFY0B9vnzr')
+          .then((result) => {
+            console.log(result, "Successfully sent !");
+            form.current.style = 'display: flex; justify-content: center; align-items: center; background-color: #76C776; color: #fff; font-size: 20px;'
+            form.current.innerHTML = ' <p>😊</p><h3 style="margin-top: 2%">Votre message a bien été envoyé !</h3><p style="font-size: 14px; font-style: italic; margin-top: 2%">Merci  &nbsp;</p>'
+          }, (error) => {
+            console.log(error.text);
+            form.current.style = 'display: flex; justify-content: center; align-items: center; background-color: #C93A3B; color: #fff; font-size: 20px;'
+            form.current.innerHTML = ' <p>😕</p><h3 style="margin-top: 2%">Oh oh... Une erreur s\'est produite.</h3><p style="font-size: 14px; font-style: italic; margin-top: 2%">Veuillez rééssayer plus tard.</p>'
+          });
     
-    //   };
+      };
 
 
     return (
@@ -43,20 +45,21 @@ export default function Shiatsuhumain() {
                 </div>
                 <div className={style.formPart}>
 
-                    <form className={style.formContact}>
+                    <form className={style.formContact} ref={form} onSubmit={sendEmail}>
                         <div className={style.inputContainer}>
-                            <label for="name">Votre Nom <span className={style.requiredStar}>*</span></label>
-                            <input type="text" name="name" required autoComplete='true'/>
+                            <label for="user_name">Votre Nom <span className={style.requiredStar}>*</span></label>
+                            <input type="text" name="user_name" required autoComplete='true'/>
                         </div>
                         <div className={style.inputContainer}>
-                            <label for="email">Votre adresse e-mail <span className={style.requiredStar}>*</span></label>
-                            <input type="email" name="email" required autoComplete='true'/>
+                            <label for="user_email">Votre adresse e-mail <span className={style.requiredStar}>*</span></label>
+                            <input type="email" name="user_email" required autoComplete='true'/>
                         </div>
                         <div className={style.inputContainer}>
-                            <label for="message">Votre Message <span className={style.requiredStar}>*</span></label>
-                            <textarea name="message" required/>
+                            <label for="user_message">Votre Message <span className={style.requiredStar}>*</span></label>
+                            <textarea name="user_message" required/>
                         </div>
-                        <button type="submit" className={style.inputSubmit}>Envoyer 🚀</button>
+                        <input type="hidden" name="from_name" value='Sandrine'/>
+                        <button type="submit" className={style.inputSubmit} value="Send">Envoyer 🚀</button>
                         <p className={style.requiredDesc}>* champ requis &nbsp;</p>
                     </form>
                     <aside className={style.asideContent}>

@@ -2,15 +2,6 @@
 import Head from 'next/head';
 import home from'@/styles/Home.module.scss'
 import React from 'react';
-import photo_horse from '../../assets/images/photo_horse.webp'
-import photo_horses from '../../assets/images/photo_horses.webp'
-import photo_horses2 from '../../assets/images/photo_horses2.webp'
-import photo_horse2 from '../../assets/images/photo_horse2.webp'
-import photo_horse3 from '../../assets/images/photo_horse3.webp'
-import photo_horse5 from '../../assets/images/photo_horse5.webp'
-import photo_horse6 from '../../assets/images/photo_horse6.jpg'
-import photo_horse7 from '../../assets/images/photo_horse7.jpg'
-import photo_horse8 from '../../assets/images/photo_header_mobile2.webp'
 
 // Components
 import Title from '../../components/title'

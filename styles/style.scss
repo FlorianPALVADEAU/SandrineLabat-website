@@ -5,10 +5,34 @@
     margin: 0;
     box-sizing: border-box;
     padding: 0;
-    overflow-x: hidden;
     font-family: 'Oswald', sans-serif;
 }
 
 body{
+    overflow-x: hidden;
     background-color: #85a5d644;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #4173be;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #88c6f0;
+  }
+
+.carousel-root{
+  margin-top: 15vh;
 }

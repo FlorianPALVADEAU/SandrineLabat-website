@@ -2,8 +2,8 @@
 import Head from 'next/head';
 import style from'@/styles/AProposDeMoi.module.scss'
 import home from'@/styles/Home.module.scss'
-import photo_massage from '../assets/images/photo_massage.webp'
-import profile_picture from '../assets/images/photo_horses.webp'
+import photo_massage from '../assets/images_new/photo_massage.jpg'
+import profile_picture from '../assets/images_new/photo_horses.jpg'
 import Link from 'next/link'
 import React from 'react'
 

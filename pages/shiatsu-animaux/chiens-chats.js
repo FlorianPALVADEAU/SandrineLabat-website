@@ -1,11 +1,11 @@
 // Images and stylesheets
 import home from'@/styles/Home.module.scss'
 import React from 'react';
-import photo_cat3 from '../../assets/images/photo_cat3.webp'
-import photo_cat2 from '../../assets/images/photo_cat2.webp'
-import photo_dog from '../../assets/images/photo_dog.webp'
-import photo_dog2 from '../../assets/images/photo_dog2.webp'
-import photo_dog3 from '../../assets/images/photo_dog3.webp' 
+import photo_cat3 from '../../assets/images_new/photo_cat3.jpg'
+import photo_cat2 from '../../assets/images_new/photo_cat2.jpg'
+import photo_dog from '../../assets/images_new/photo_dog.jpg'
+import photo_dog2 from '../../assets/images_new/photo_dog2.jpg'
+import photo_dog3 from '../../assets/images_new/photo_dog3.jpg' 
 
 
 // Components

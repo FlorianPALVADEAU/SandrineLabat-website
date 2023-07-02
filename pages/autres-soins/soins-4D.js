@@ -4,8 +4,8 @@ import home from'@/styles/Home.module.scss'
 import React from 'react';
 import idealement from'@/styles/Idealement.module.scss'
 import style from'@/styles/Soins4D.module.scss'
-import photo_rocks from '../../assets/images/johnson-wang-qG-hPxoAnRE-unsplash.jpg'
-import photo_horse from '../../assets/images/photo_horse3.webp'
+import photo_rocks from '../../assets/images_new/johnson-wang-qG-hPxoAnRE-unsplash.jpg'
+import photo_horse from '../../assets/images_new/photo_horse3.jpg'
 
 // Components
 import Title from '../../components/title'

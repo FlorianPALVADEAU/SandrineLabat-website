@@ -2,11 +2,11 @@
 import Head from 'next/head';
 import style from'@/styles/Shiatsuhumain.module.scss'
 import home from'@/styles/Home.module.scss'
-import photo_massage from '../assets/images/photo_massage.webp'
-import illustration_vegetables_photo from '../assets/images/illustration_vegetables_photo.webp'
-import illustration_stretching_photo from '../assets/images/illustration_stretching_photo.webp'
-import illustration_kid_photo from '../assets/images/illustration_kid_photo.webp'
-import illustration_neck_pain_photo from '../assets/images/illustration_neck_pain_photo.webp'
+import photo_massage from '../assets/images_new/photo_massage.jpg'
+import illustration_vegetables_photo from '../assets/images_new/illustration_vegetables_photo.jpg'
+import illustration_stretching_photo from '../assets/images_new/illustration_stretching_photo.jpg'
+import illustration_kid_photo from '../assets/images_new/illustration_kid_photo.jpg'
+import illustration_neck_pain_photo from '../assets/images_new/illustration_neck_pain_photo.jpg'
 
 // Components
 import Title from '../components/title'

@@ -2,17 +2,9 @@
 import Head from 'next/head';
 import style from'@/styles/Idealement.module.scss'
 import home from'@/styles/Home.module.scss'
-import photo_massage from '../../assets/images/photo_massage.webp'
-import illustration_vegetables_photo from '../../assets/images/illustration_vegetables_photo.webp'
-import illustration_stretching_photo from '../../assets/images/illustration_stretching_photo.webp'
-import illustration_kid_photo from '../../assets/images/illustration_kid_photo.webp'
-import illustration_neck_pain_photo from '../../assets/images/illustration_neck_pain_photo.webp'
 
 // Components
 import Title from '../../components/title'
-import ImageText from '../../components/imageText'
-import ImageTextCard from '../../components/imageTextCard'
-import TextFocus from '../../components/textFocus'
 import Disclaimer from '../../components/disclaimer'
 
 
