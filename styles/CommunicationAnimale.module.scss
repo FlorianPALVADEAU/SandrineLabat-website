@@ -1,17 +1,34 @@
-.list{
-    width: 80%;
+.introduction{
+    height: 150vh;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    span{
+        display: none;
+    }
+}
+
+.list{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
     margin-top: 20vh;
     margin-bottom: 20vh;
     .content{
-        width: 100%;
-        height: 50vh;
+        margin-top: 7vh;
+        margin-bottom: 5vh;
+        width: 80%;
         display: flex;
-        justify-content: space-around;
-        align-items: left;
-        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
     }
 }
 

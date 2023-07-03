@@ -170,6 +170,12 @@ export default function Navbar() {
       } else if (lastURLElement === 'communication-animale') {
         setH1Content('Communication Animale');
         setH2Content('Découvrez en plus sur la communication animale !');
+      }else if (lastURLElement === 'copyrights') {
+        setH1Content('Droits d\'auteurs');
+        setH2Content('Droits d\'auteur © 2023 Sandrine Labat. Tous droits réservés.');
+      } else if (lastURLElement === 'website-policy') {
+        setH1Content('Politiques');
+        setH2Content('Découvrez les politiques de ce site');
       }
     };
 

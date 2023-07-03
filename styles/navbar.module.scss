@@ -17,7 +17,7 @@
 .scrolled{
     transition: 0.2s ease-in-out;
     background-color: #e2f3ff;
-    z-index: 1000000000000000000000000000000000000;
+    z-index: 10000;
     box-shadow: 10px 0px 20px rgba(0,0,0,0.2);
     .links{
         .link{
@@ -53,6 +53,7 @@
         top: 0;
         left: 0;
         right: 0;
+        z-index: 1000;
         .logo{
             transform: scale(0.2);
         }

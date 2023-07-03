@@ -73,7 +73,7 @@ function Slider() {
   
     return (
       <Carousel
-        autoPlay
+        // autoPlay
         interval={5000}
         infiniteLoop
         showStatus={false}

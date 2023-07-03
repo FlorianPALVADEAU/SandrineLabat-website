@@ -16,10 +16,10 @@ export default function Footer() {
           <div className={style.quickContact}>
             <Image className={style.image} src={fullLogo} alt="Sandrine labat full logo"/>
             <div className={style.icons}>
-              <a className={style.a} href='#'><Image className={style.icon} src={insta} alt="Instagram logo"/></a>
-              <a className={style.a} href='#'><Image className={style.icon} src={linkedIn} alt="LinkedIn logo"/></a>
-              <a className={style.a} href='#'><Image className={style.icon} src={mail} alt="Mail logo"/></a>
-              <a className={style.a} href='#'><Image className={style.icon} src={facebook} alt="Facebook logo"/></a>
+              <a className={style.a} target='_blank' href='https://www.instagram.com/celacloche/'><Image className={style.icon} src={insta} alt="Instagram logo"/></a>
+              <a className={style.a} target='_blank' href='https://www.linkedin.com/in/sandrine-labat-55a3156b/'><Image className={style.icon} src={linkedIn} alt="LinkedIn logo"/></a>
+              <a className={style.a} href='mailto:sandrinelabat@gmail.com'><Image className={style.icon} src={mail} alt="Mail logo"/></a>
+              <a className={style.a} target='_blank' href='#'><Image className={style.icon} src={facebook} alt="Facebook logo"/></a>
             </div>
           </div>
           <div className={style.listContainer}>
@@ -53,7 +53,12 @@ export default function Footer() {
         </div>
         <div className={style.bottomPart}>
           <a className={style.a}href='https://florian-palvadeau.com' target='_blank'>Made by Florian PALVADEAU</a>
-          <a className={style.a}href='#' target='_blank'>Copyrights - Website Policy</a>
+          <div className={style.a}>
+            <a className={style.a} href='/copyrights' target='_blank'>{` Droits d'auteurs`}</a> |
+            <a className={style.a} href='/website-policy' target='_blank'>{` Politiques d'utilisation`}</a> |
+            <a className={style.a} href='/website-policy' target='_blank'> Plan du site</a> |
+            <a className={style.a} href='/mentions-legales' target='_blank'> Mentions Légales</a>
+          </div>
         </div>
       </footer>
       </>

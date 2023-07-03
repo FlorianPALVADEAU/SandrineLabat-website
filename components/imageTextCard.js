@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import stylesheet from'@/styles/imageTextCard.module.scss'
 import { useEffect } from 'react';
-import Image from 'next/image'
 
 
 
@@ -21,7 +20,7 @@ export default function ImageTextCard({image, text}) {
 
   return (
       <div className={stylesheet.card}>
-          <Image className={stylesheet.cardImg} src={src} alt="image explicative" height={"1920"} width={"1080"} />
+          <div className={stylesheet.cardImg} style={{backgroundImage: `url(${src})`}}></div>
           <div ref={p} className={stylesheet.cardContent}></div>
       </div>
   )

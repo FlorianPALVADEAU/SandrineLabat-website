@@ -40,10 +40,10 @@ export default function Home() {
             image={shiatsuPresentationImage}
             text={
               [
-                'Depuis plus de <b>5000 ans</b>, Le shiatsu est un soin japonais basé sur la médecine traditionnelle chinoise qui permet d\'apporter un équilibre énergétique global du corps et de l\' esprit.', 
-                'C\'est un soin préventif qui permet de stimuler les défenses <b>naturelles</b> de l\'organisme. Le Shiatsu est une méthode de bien-être naturelle, douce et <b>sans effet secondaire</b> dangereux pour la santé.', 
-                'Au cours de la séance, le praticien propose des pressions (avecla pulpe des doigts) sur l\'ensemble des méridiens, des <b>rotations</b> ou <b>étirements</b>.',
-                'Ces différentes techniques permettent d\'harmoniser le réseau énergétique de la personne et de favoriser ainsi la libre <b>circulation de l\'énergie</b> sur l\'ensemble du corps.'
+                'Depuis plus de <strong>5000 ans</strong>, Le shiatsu est un soin japonais basé sur la médecine traditionnelle chinoise qui permet d\'apporter un équilibre énergétique global du corps et de l\' esprit.', 
+                'C\'est un soin préventif qui permet de stimuler les défenses <strong>naturelles</strong> de l\'organisme. Le Shiatsu est une méthode de bien-être naturelle, douce et <strong>sans effet secondaire</strong> dangereux pour la santé.', 
+                'Au cours de la séance, le praticien propose des pressions (avecla pulpe des doigts) sur l\'ensemble des méridiens, des <strong>rotations</strong> ou <strong>étirements</strong>.',
+                'Ces différentes techniques permettent d\'harmoniser le réseau énergétique de la personne et de favoriser ainsi la libre <strong>circulation de l\'énergie</strong> sur l\'ensemble du corps.'
               ]
             }
             reverse={false}
@@ -124,7 +124,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={`${style.infoShiatsu} ${style.clientNote}`}>
+        <div className={`${style.clientNote}`}>
           <Title 
             coloredWord={'Avis '}
             firstTitle={"clients"}

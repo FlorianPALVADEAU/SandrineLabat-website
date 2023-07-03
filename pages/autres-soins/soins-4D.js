@@ -53,12 +53,13 @@ export default function Soins4D () {
                 coloredWord={'Déroulement'}
                 firstTitle={"d'une séance"} 
                 />
-                <ul className={idealement.content}>
+                <ol className={idealement.content}>
                     <li>{`La méthode 4D prend en considération l'ensemble de l'être et en supprime les causes comme les déséquilibres, les traumatismes, les blocages, ...`}</li>
                     <li>{`Moyennant des mesures précises grâce au pendule, il est possible d'obtenir une visualisation de la vitalité de l'être, des tissus, des organes, des différents systèmes organiques, structure osseuse, émotionnel, ... et d'autres éléments sur d'autres plans, énergétiques et spirituels.`}</li>
                     <li>{`Le traitement se fait à distance, on peut aussi le faire en présence du client mais comme il y a aucun contact physique, le compte rendu se fera par téléphone.`}</li>
                     <li>{`Les personnes ayant bénéficiés d'un soin ont un ressentit assez rapide et de belles améliorations s'opèrent. Les animaux ayant bénéficiés d'un soin ne peuvent communiquer mais leur propriétaire le voit, les photos avant après peuvent aider.`}</li>
-                </ul>
+                </ol>
+                
             </div>
 
 

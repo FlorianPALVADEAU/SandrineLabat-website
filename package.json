@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint"
   },
@@ -20,6 +21,7 @@
     "react-vertical-timeline-component": "^3.6.0"
   },
   "devDependencies": {
+    "next-sitemap": "^4.1.8",
     "sass": "^1.60.0"
   }
 }
