@@ -21,10 +21,10 @@ export default function Shiatsuhumain() {
     return (
         <>
             <NextSeo
-                title="Le Shiatsu humain - Sandrine LABAT ?"
+                title="Le Shiatsu humain - Sandrine LABAT"
                 description="Découvrez le Shiatsu humain, une pratique basée sur les théories de la médecine traditionnelle chinoise pour apporter un équilibre énergétique global du corps et de l'esprit. Harmonisez la circulation de l'énergie et améliorez votre état général pour retrouver un état de bien-être et de relaxation."
                 openGraph={{
-                title: "Le Shiatsu humain - Sandrine Labat",
+                title: "Le Shiatsu humain - Sandrine LABAT",
                 description: "Découvrez le Shiatsu humain, une pratique basée sur les théories de la médecine traditionnelle chinoise pour apporter un équilibre énergétique global du corps et de l'esprit. Harmonisez la circulation de l'énergie et améliorez votre état général pour retrouver un état de bien-être et de relaxation.",
                 images: [
                     {

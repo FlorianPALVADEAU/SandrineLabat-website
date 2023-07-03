@@ -25,10 +25,10 @@ export default function ReflexoCranioSacre () {
     return (
         <>
             <NextSeo
-                title="Réflexologie Crânio-sacrée - Sandrine Labat"
+                title="Réflexologie Crânio-sacrée - Sandrine LABAT"
                 description="Découvrez les bienfaits du shiatsu pour chevaux, ânes et poneys, une méthode de soins énergétiques douce et naturelle qui améliore la santé et le bien-être des animaux. Apprenez-en plus sur les conditions idéales pour les séances, les réactions possibles des chevaux et la fréquence recommandée."
                 openGraph={{
-                title: "Réflexologie Crânio-sacrée - Sandrine Labat",
+                title: "Réflexologie Crânio-sacrée - Sandrine LABAT",
                 description: "Découvrez les bienfaits du shiatsu pour chevaux, ânes et poneys, une méthode de soins énergétiques douce et naturelle qui améliore la santé et le bien-être des animaux. Apprenez-en plus sur les conditions idéales pour les séances, les réactions possibles des chevaux et la fréquence recommandée.",
                 images: [
                     {

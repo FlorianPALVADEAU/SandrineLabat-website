@@ -27,10 +27,10 @@ export default function Home() {
   return (
     <>
       <NextSeo
-        title="Le Shiatsu - Sandrine Labat"
+        title="Le Shiatsu - Sandrine LABAT"
         description="Revenons sur les origines du shiatsu pour mieux comprendre son fonctionnement et son utilité. Découvrez les bienfaits du shiatsu, les moments propices pour faire une séance, quelques statistiques intéressantes et les avis des clients."
         openGraph={{
-          title: "Le Shiatsu - Sandrine Labat",
+          title: "Le Shiatsu - Sandrine LABAT",
           description: "Revenons sur les origines du shiatsu pour mieux comprendre son fonctionnement et son utilité. Découvrez les bienfaits du shiatsu, les moments propices pour faire une séance, quelques statistiques intéressantes et les avis des clients.",
           images: [
             {
@@ -44,9 +44,9 @@ export default function Home() {
         }}
       />
       <Head>
-        <meta name="keywords" content="Sandrine Labat, sandrine, labat, labat shiatsu, sandrine shiatsu, shiatsu, origines du shiatsu, fonctionnement du shiatsu, utilité du shiatsu, bienfaits du shiatsu, moments propices pour faire une séance de shiatsu, statistiques du shiatsu, avis clients, équilibre énergétique, système immunitaire, souplesse des tissus, systèmes respiratoires, systèmes nerveux, systèmes sanguins, systèmes hormonaux, soulagement de douleurs, détente, bien-être intérieur, auto-guérison, prévention, rééquilibrage, symptômes, problèmes structurels, problèmes musculaires, problèmes ligamentaires, problèmes digestifs, problèmes de peau, problèmes psychologiques."/>
+        <meta name="keywords" content="Sandrine LABAT, sandrine, labat, labat shiatsu, sandrine shiatsu, shiatsu, origines du shiatsu, fonctionnement du shiatsu, utilité du shiatsu, bienfaits du shiatsu, moments propices pour faire une séance de shiatsu, statistiques du shiatsu, avis clients, équilibre énergétique, système immunitaire, souplesse des tissus, systèmes respiratoires, systèmes nerveux, systèmes sanguins, systèmes hormonaux, soulagement de douleurs, détente, bien-être intérieur, auto-guérison, prévention, rééquilibrage, symptômes, problèmes structurels, problèmes musculaires, problèmes ligamentaires, problèmes digestifs, problèmes de peau, problèmes psychologiques."/>
       </Head>
-      <main className={style.main}>
+      <container className={style.main}>
         <div className={style.shiatsuPresentation}>
           <Title 
             coloredWord={'Le Shiatsu,'}
@@ -154,7 +154,7 @@ export default function Home() {
         <Slider/>
 
 
-      </main>
+      </container>
     </>
   )
 }

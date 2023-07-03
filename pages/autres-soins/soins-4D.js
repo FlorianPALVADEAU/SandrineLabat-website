@@ -27,10 +27,10 @@ export default function Soins4D () {
     return (
         <>
             <NextSeo
-                title="Soins 4D - Sandrine Labat"
+                title="Soins 4D - Sandrine LABAT"
                 description="Découvrez les bienfaits du shiatsu pour chevaux, ânes et poneys, une méthode de soins énergétiques douce et naturelle qui améliore la santé et le bien-être des animaux. Apprenez-en plus sur les conditions idéales pour les séances, les réactions possibles des chevaux et la fréquence recommandée."
                 openGraph={{
-                title: "Soins 4D - Sandrine Labat",
+                title: "Soins 4D - Sandrine LABAT",
                 description: "Découvrez les bienfaits du shiatsu pour chevaux, ânes et poneys, une méthode de soins énergétiques douce et naturelle qui améliore la santé et le bien-être des animaux. Apprenez-en plus sur les conditions idéales pour les séances, les réactions possibles des chevaux et la fréquence recommandée.",
                 images: [
                     {

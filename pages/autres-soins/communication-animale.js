@@ -33,10 +33,10 @@ export default function CommunicationAnimale () {
     return (
         <>
             <NextSeo
-                title="Communication Animale - Sandrine Labat"
+                title="Communication Animale - Sandrine LABAT"
                 description="Découvrez les bienfaits du shiatsu pour chevaux, ânes et poneys, une méthode de soins énergétiques douce et naturelle qui améliore la santé et le bien-être des animaux. Apprenez-en plus sur les conditions idéales pour les séances, les réactions possibles des chevaux et la fréquence recommandée."
                 openGraph={{
-                title: "Communication Animale - Sandrine Labat",
+                title: "Communication Animale - Sandrine LABAT",
                 description: "Découvrez les bienfaits du shiatsu pour chevaux, ânes et poneys, une méthode de soins énergétiques douce et naturelle qui améliore la santé et le bien-être des animaux. Apprenez-en plus sur les conditions idéales pour les séances, les réactions possibles des chevaux et la fréquence recommandée.",
                 images: [
                     {

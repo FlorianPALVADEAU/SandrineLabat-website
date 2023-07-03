@@ -28,10 +28,10 @@ export default function Shiatsuhumain() {
     return (
         <>
             <NextSeo
-                title="Contactez-moi ! - Sandrine Labat"
+                title="Contactez-moi ! - Sandrine LABAT"
                 description="Besoin d'un rendez-vous ? Contactez-moi pour toutes vos questions et pour prendre rendez-vous. Des réponses à vos questions sur le Shiatsu. Bookez en 3 clics !"
                 openGraph={{
-                title: "Contactez-moi ! - Sandrine Labat",
+                title: "Contactez-moi ! - Sandrine LABAT",
                 description: "Besoin d'un rendez-vous ? Contactez-moi pour toutes vos questions et pour prendre rendez-vous. Des réponses à vos questions sur le Shiatsu. Bookez en 3 clics !",
                 images: [
                     {
@@ -63,15 +63,15 @@ export default function Shiatsuhumain() {
                     <form className={style.formContact} ref={form} onSubmit={sendEmail}>
                         <div className={style.inputContainer}>
                             <label for="user_name">Votre Nom <span className={style.requiredStar}>*</span></label>
-                            <input type="text" name="user_name" required autoComplete='true'/>
+                            <input type="text" name="user_name" id='user_name' required autoComplete='true'/>
                         </div>
                         <div className={style.inputContainer}>
                             <label for="user_email">Votre adresse e-mail <span className={style.requiredStar}>*</span></label>
-                            <input type="email" name="user_email" required autoComplete='true'/>
+                            <input type="email" name="user_email" id='user_email' required autoComplete='true'/>
                         </div>
                         <div className={style.inputContainer}>
                             <label for="user_message">Votre Message <span className={style.requiredStar}>*</span></label>
-                            <textarea name="user_message" required/>
+                            <textarea name="user_message" id='user_message' required/>
                         </div>
                         <input type="hidden" name="from_name" value='Sandrine'/>
                         <button type="submit" className={style.inputSubmit} value="Send">Envoyer 🚀</button>

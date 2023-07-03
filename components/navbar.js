@@ -172,7 +172,7 @@ export default function Navbar() {
         setH2Content('Découvrez en plus sur la communication animale !');
       }else if (lastURLElement === 'copyrights') {
         setH1Content('Droits d\'auteurs');
-        setH2Content('Droits d\'auteur © 2023 Sandrine Labat. Tous droits réservés.');
+        setH2Content('Droits d\'auteur © 2023 Sandrine LABAT. Tous droits réservés.');
       } else if (lastURLElement === 'website-policy') {
         setH1Content('Politiques');
         setH2Content('Découvrez les politiques de ce site');
@@ -210,7 +210,7 @@ export default function Navbar() {
             <Link href="/" className={style.link}>Accueil</Link>
             <Link href="/shiatsu-humain" className={style.link}>Shiatsu Humain</Link>
             <div className={style.dropdown}>
-              <p href="#" className={style.link}>Soins Animaux</p>
+              <p className={style.link}>Soins Animaux</p>
               <div className={style.dropdownActive}>
                 <Link href="/shiatsu-animaux/chevaux-anes-poneys" className={style.link}>Chevaux, Poneys et Ânes</Link>
                 <Link href="/shiatsu-animaux/chiens-chats" className={style.link}>Chiens et chats</Link>
@@ -218,7 +218,7 @@ export default function Navbar() {
               </div>
             </div>
             <div className={style.dropdown}>
-              <p href="#" className={style.link}>Autres Soins</p>
+              <p className={style.link}>Autres Soins</p>
               <div className={style.dropdownActive}>
                 <Link href="/autres-soins/soins-4D" className={style.link}>Soin 4D</Link>
                 <Link href="/autres-soins/reflexo-cranio-sacre" className={style.link}>Réflexo Crânio Sacré</Link>

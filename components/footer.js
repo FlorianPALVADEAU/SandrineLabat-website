@@ -48,8 +48,8 @@ export default function Footer() {
             loading="lazy" 
             referrerPolicy="no-referrer-when-downgrade"
             className={style.iframe}
-          >
-          </iframe>
+            title="Carte de localisation"
+          ></iframe>
         </div>
         <div className={style.bottomPart}>
           <a className={style.a}href='https://florian-palvadeau.com' target='_blank'>Made by Florian PALVADEAU</a>

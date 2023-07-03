@@ -19,7 +19,7 @@ function websitePolicy() {
         </li>
         <li>
             <h4>Propriété intellectuelle</h4>
-            <p>{`Tous les contenus présents sur ce site web, tels que textes, images, graphiques, logos, vidéos, musiques, icônes, sont la propriété exclusive de Sandrine Labat, sauf indication contraire. Toute utilisation non autorisée de ces contenus est strictement interdite.`}</p>
+            <p>{`Tous les contenus présents sur ce site web, tels que textes, images, graphiques, logos, vidéos, musiques, icônes, sont la propriété exclusive de Sandrine LABAT, sauf indication contraire. Toute utilisation non autorisée de ces contenus est strictement interdite.`}</p>
         </li>
         <li>
             <h4>Modifications</h4>
