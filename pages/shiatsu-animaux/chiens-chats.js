@@ -6,7 +6,7 @@ import photo_cat2 from '../../assets/images_new/photo_cat2.jpg'
 import photo_dog from '../../assets/images_new/photo_dog.jpg'
 import photo_dog2 from '../../assets/images_new/photo_dog2.jpg'
 import photo_dog3 from '../../assets/images_new/photo_dog3.jpg' 
-
+import { NextSeo } from 'next-seo';
 
 // Components
 import Title from '../../components/title'
@@ -28,9 +28,24 @@ export default function ChiensChats () {
 
     return (
         <>
+            <NextSeo
+                title="Chiens et Chats - Sandrine LABAT"
+                description="Découvrez les bienfaits du shiatsu pour les chiens et les chats. Apprenez-en plus sur les conditions idéales d'un soin énergétique et les réactions des animaux. Stimulez les défenses naturelles de votre animal avec des séances de shiatsu régulières."
+                openGraph={{
+                title: "Chiens et Chats - Sandrine LABAT",
+                description: "Découvrez les bienfaits du shiatsu pour les chiens et les chats. Apprenez-en plus sur les conditions idéales d'un soin énergétique et les réactions des animaux. Stimulez les défenses naturelles de votre animal avec des séances de shiatsu régulières.",
+                images: [
+                    {
+                    url: 'https://zupimages.net/viewer.php?id=23/27/qztj.jpg',
+                    width: 1200,
+                    height: 630,
+                    alt: 'Photo illustrative du site de Sandrine LABAT'
+                    }
+                ],
+                site_name: 'Sandrine LABAT Shiatsu'
+                }}
+            />
             <Head>
-                <title>Chiens et Chats - Mise en contexte</title>
-                <meta name="description" content="Découvrez les bienfaits du shiatsu pour les chiens et les chats. Apprenez-en plus sur les conditions idéales d'un soin énergétique et les réactions des animaux. Stimulez les défenses naturelles de votre animal avec des séances de shiatsu régulières." />
                 <meta name="keywords" content="shiatsu, chiens, chats, bienfaits, soin énergétique, défenses naturelles, réactions, animaux, conditions idéales" />
             </Head>
         

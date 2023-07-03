@@ -11,6 +11,8 @@ import icon_handshake from '../assets/icons/icon_handshake.png'
 import icon_heart from '../assets/icons/icon_heart.png'
 import icon_mecanism from '../assets/icons/icon_mecanism.png'
 import icon_coffee from '../assets/icons/icon_coffee.png'
+import { NextSeo } from 'next-seo';
+
 
 // Components
 import Title from '../components/title'
@@ -24,9 +26,24 @@ export default function Home() {
 
   return (
     <>
+      <NextSeo
+        title="Le Shiatsu - Sandrine Labat"
+        description="Revenons sur les origines du shiatsu pour mieux comprendre son fonctionnement et son utilité. Découvrez les bienfaits du shiatsu, les moments propices pour faire une séance, quelques statistiques intéressantes et les avis des clients."
+        openGraph={{
+          title: "Le Shiatsu - Sandrine Labat",
+          description: "Revenons sur les origines du shiatsu pour mieux comprendre son fonctionnement et son utilité. Découvrez les bienfaits du shiatsu, les moments propices pour faire une séance, quelques statistiques intéressantes et les avis des clients.",
+          images: [
+            {
+              url: 'https://zupimages.net/viewer.php?id=23/27/qztj.jpg',
+              width: 1200,
+              height: 630,
+              alt: 'Photo illustrative du site de Sandrine LABAT'
+            }
+          ],
+          site_name: 'Sandrine LABAT Shiatsu'
+        }}
+      />
       <Head>
-        <title>Le Shiatsu - Sandrine Labat</title>
-        <meta name="description" content="Revenons sur les origines du shiatsu pour mieux comprendre son fonctionnement et son utilité. Découvrez les bienfaits du shiatsu, les moments propices pour faire une séance, quelques statistiques intéressantes et les avis des clients."/>
         <meta name="keywords" content="Sandrine Labat, sandrine, labat, labat shiatsu, sandrine shiatsu, shiatsu, origines du shiatsu, fonctionnement du shiatsu, utilité du shiatsu, bienfaits du shiatsu, moments propices pour faire une séance de shiatsu, statistiques du shiatsu, avis clients, équilibre énergétique, système immunitaire, souplesse des tissus, systèmes respiratoires, systèmes nerveux, systèmes sanguins, systèmes hormonaux, soulagement de douleurs, détente, bien-être intérieur, auto-guérison, prévention, rééquilibrage, symptômes, problèmes structurels, problèmes musculaires, problèmes ligamentaires, problèmes digestifs, problèmes de peau, problèmes psychologiques."/>
       </Head>
       <main className={style.main}>

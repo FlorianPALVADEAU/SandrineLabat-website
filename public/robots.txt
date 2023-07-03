@@ -1,6 +1,9 @@
 # *
 User-agent: *
-Allow: /
+Disallow: /copyrights
+Disallow: /website-policy
+Disallow: /mentions-legales
+Disallow: /sitemap
 
 # Host
 Host: https://sandrine-labat-website.vercel.app/

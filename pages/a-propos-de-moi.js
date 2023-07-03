@@ -6,7 +6,7 @@ import photo_massage from '../assets/images_new/photo_massage.jpg'
 import profile_picture from '../assets/images_new/photo_horses.jpg'
 import Link from 'next/link'
 import React from 'react'
-
+import { NextSeo } from 'next-seo';
 
 
 // Components
@@ -36,9 +36,24 @@ export default function Aproposdemoi() {
     }
     return (
         <>
+            <NextSeo
+                title="Sandrine LABAT, à votre écoute ! - Et si on se présentait ?"
+                description="Moi, c'est Sandrine LABAT, et je suis practicienne en : Soin énergétique Equin, Canin et Félin (Certifiée de l'école Scottish School for Horses - Liz Eddy), Shiatsu Humain Thérapeutique et de Relaxation (Certifiée de l'Ecole Nonindo - Isabelle Laading), Réflexologie Cranio Sacré (Certifiée par Max Albert Mio - instructeur en kinésiologie animale, réflexologie cranio sacré). J'officie sur la commune des Yvelines (78) et ses environs (28, 27, 91, 95), mais aussi dans l'Indre, l'Indre-et-Loire, le Loire-et-Cher et l'Ain!"
+                openGraph={{
+                title: "Sandrine LABAT, à votre écoute ! - Et si on se présentait ?",
+                description: "Moi, c'est Sandrine LABAT, et je suis practicienne en : Soin énergétique Equin, Canin et Félin (Certifiée de l'école Scottish School for Horses - Liz Eddy), Shiatsu Humain Thérapeutique et de Relaxation (Certifiée de l'Ecole Nonindo - Isabelle Laading), Réflexologie Cranio Sacré (Certifiée par Max Albert Mio - instructeur en kinésiologie animale, réflexologie cranio sacré). J'officie sur la commune des Yvelines (78) et ses environs (28, 27, 91, 95), mais aussi dans l'Indre, l'Indre-et-Loire, le Loire-et-Cher et l'Ain!",
+                images: [
+                    {
+                    url: 'https://zupimages.net/viewer.php?id=23/27/qztj.jpg',
+                    width: 1200,
+                    height: 630,
+                    alt: 'Photo illustrative du site de Sandrine LABAT'
+                    }
+                ],
+                site_name: 'Sandrine LABAT Shiatsu'
+                }}
+            />
             <Head>
-                <title>Sandrine LABAT, à votre écoute ! - Et si on se présentait ?</title>
-                <meta name="description" content="Moi, c'est Sandrine LABAT, et je suis practicienne en : Soin énergétique Equin, Canin et Félin (Certifiée de l'école Scottish School for Horses - Liz Eddy), Shiatsu Humain Thérapeutique et de Relaxation (Certifiée de l'Ecole Nonindo - Isabelle Laading), Réflexologie Cranio Sacré (Certifiée par Max Albert Mio - instructeur en kinésiologie animale, réflexologie cranio sacré). J'officie sur la commune des Yvelines (78) et ses environs (28, 27, 91, 95), mais aussi dans l'Indre, l'Indre-et-Loire, le Loire-et-Cher et l'Ain!" />
                 <meta name="keywords" content={keywords.join(", ")} />
             </Head>
             <div className={style.presentation}>

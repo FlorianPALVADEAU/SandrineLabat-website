@@ -1,0 +1,40 @@
+.content{
+    width: 100vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    li{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px;
+        h4{
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        p{
+            width: 80%;
+            text-align: center;
+        }
+    }
+}
+
+.content2{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10vh;
+
+    p{
+        width: 30%;
+        text-align: center;
+        padding: 10px;
+    }
+}

@@ -3,6 +3,7 @@ import Head from 'next/head';
 import style from'@/styles/Contact.module.scss'
 import React, { useEffect, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { NextSeo } from 'next-seo';
 
 
 export default function Shiatsuhumain() {
@@ -26,12 +27,26 @@ export default function Shiatsuhumain() {
 
     return (
         <>
-        
+            <NextSeo
+                title="Contactez-moi ! - Sandrine Labat"
+                description="Besoin d'un rendez-vous ? Contactez-moi pour toutes vos questions et pour prendre rendez-vous. Des réponses à vos questions sur le Shiatsu. Bookez en 3 clics !"
+                openGraph={{
+                title: "Contactez-moi ! - Sandrine Labat",
+                description: "Besoin d'un rendez-vous ? Contactez-moi pour toutes vos questions et pour prendre rendez-vous. Des réponses à vos questions sur le Shiatsu. Bookez en 3 clics !",
+                images: [
+                    {
+                    url: 'https://zupimages.net/viewer.php?id=23/27/qztj.jpg',
+                    width: 1200,
+                    height: 630,
+                    alt: 'Photo illustrative du site de Sandrine LABAT'
+                    }
+                ],
+                site_name: 'Sandrine LABAT Shiatsu'
+                }}
+            />
             <Head>
                 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"/>
                 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-                <title>Contactez-moi ! - Sandrine Labat</title>
-                <meta name="description" content="Besoin d'un rendez-vous ? Contactez-moi pour toutes vos questions et pour prendre rendez-vous. Des réponses à vos questions sur le Shiatsu. Bookez en 3 clics !"/>
                 <meta name="keywords" content="contact, rendez-vous, questions, prise de rendez-vous, Shiatsu, tarifs, informations, sms, discuter, pluie et beau temps, bookez en 3 clics"/>
                 
             </Head>

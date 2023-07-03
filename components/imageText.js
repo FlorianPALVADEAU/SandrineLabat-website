@@ -11,7 +11,7 @@ export default function ImageText({ image, text, reverse }) {
     text.forEach(element => {
       TextPart(element);
     });
-  }, []);
+  }, [text]);
 
   function TextPart(text) {
     const paragraph = document.createElement('p');

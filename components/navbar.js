@@ -176,6 +176,12 @@ export default function Navbar() {
       } else if (lastURLElement === 'website-policy') {
         setH1Content('Politiques');
         setH2Content('Découvrez les politiques de ce site');
+      } else if (lastURLElement === 'mentions-legales') {
+        setH1Content('Mentions légales du site');
+        setH2Content('Découvrez les mentions légales de ce site');
+      } else if (lastURLElement === 'sitemap') {
+        setH1Content('Plan du Site');
+        setH2Content('Découvrez le plan de ce site');
       }
     };
 
@@ -190,13 +196,13 @@ export default function Navbar() {
     return () => {
       router.events.off('routeChangeComplete', handleRouteChange);
     };
-  }, []);
+  }, [router.events, router.pathname]);
 
   return (
     <>
       <header className={style.header}>
         <nav className={`${style.navBar} ${pos === 'top' ? '' : style.scrolled}`} >
-          <Image priority src={pos === 'top' ? humanLogo : humanLogoScrolled} className={style.logo} alt='logo'/>
+          <Link href='/'><Image priority src={pos === 'top' ? humanLogo : humanLogoScrolled} className={style.logo} alt='logo'/></Link>
           <div id={`${style.burger}`} className='burger' ref={burger} onClick={handleBurger}>
             <span></span>
           </div>

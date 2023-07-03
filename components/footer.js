@@ -56,7 +56,7 @@ export default function Footer() {
           <div className={style.a}>
             <a className={style.a} href='/copyrights' target='_blank'>{` Droits d'auteurs`}</a> |
             <a className={style.a} href='/website-policy' target='_blank'>{` Politiques d'utilisation`}</a> |
-            <a className={style.a} href='/website-policy' target='_blank'> Plan du site</a> |
+            <a className={style.a} href='/sitemap' target='_blank'> Plan du site</a> |
             <a className={style.a} href='/mentions-legales' target='_blank'> Mentions Légales</a>
           </div>
         </div>

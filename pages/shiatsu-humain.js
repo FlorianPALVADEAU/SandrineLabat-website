@@ -7,6 +7,7 @@ import illustration_vegetables_photo from '../assets/images_new/illustration_veg
 import illustration_stretching_photo from '../assets/images_new/illustration_stretching_photo.jpg'
 import illustration_kid_photo from '../assets/images_new/illustration_kid_photo.jpg'
 import illustration_neck_pain_photo from '../assets/images_new/illustration_neck_pain_photo.jpg'
+import { NextSeo } from 'next-seo';
 
 // Components
 import Title from '../components/title'
@@ -19,10 +20,24 @@ import Disclaimer from '../components/disclaimer'
 export default function Shiatsuhumain() {
     return (
         <>
+            <NextSeo
+                title="Le Shiatsu humain - Sandrine LABAT ?"
+                description="Découvrez le Shiatsu humain, une pratique basée sur les théories de la médecine traditionnelle chinoise pour apporter un équilibre énergétique global du corps et de l'esprit. Harmonisez la circulation de l'énergie et améliorez votre état général pour retrouver un état de bien-être et de relaxation."
+                openGraph={{
+                title: "Le Shiatsu humain - Sandrine Labat",
+                description: "Découvrez le Shiatsu humain, une pratique basée sur les théories de la médecine traditionnelle chinoise pour apporter un équilibre énergétique global du corps et de l'esprit. Harmonisez la circulation de l'énergie et améliorez votre état général pour retrouver un état de bien-être et de relaxation.",
+                images: [
+                    {
+                    url: 'https://zupimages.net/viewer.php?id=23/27/qztj.jpg',
+                    width: 1200,
+                    height: 630,
+                    alt: 'Photo illustrative du site de Sandrine LABAT'
+                    }
+                ],
+                site_name: 'Sandrine LABAT Shiatsu'
+                }}
+            />
             <Head>
-                <title>Le Shiatsu humain - {`C'est quoi ?`}</title>
-                <meta name="description" content="Découvrez le Shiatsu humain, une pratique basée sur les théories de la médecine traditionnelle chinoise pour apporter un équilibre énergétique global du corps et de l'esprit. Harmonisez la circulation de l'énergie et améliorez votre état général pour retrouver un état de bien-être et de relaxation."
-                />
                 <meta name="keywords" content="Shiatsu humain, médecine traditionnelle chinoise, équilibre énergétique, bien-être, relaxation, thérapie manuelle, méridiens, points d'acupuncture, circulation de l'énergie, état général, lâcher prise, tensions, séance de Shiatsu, protocole précis, 12 méridiens principaux, pressions des pouces, état d'esprit paisible, praticien de Shiatsu, corps et esprit, forme physique et mentale, défenses naturelles de l'organisme, prévention, confiance entre praticien et patient, énergétique du corps et de l'esprit, Shiatsu de saison, séances rapprochées, rééquilibrer l'énergie, séances de détente, médecine alternative, techniques de relaxation, praticien expérimenté, bienfaits du Shiatsu, soulagement du stress, harmonie du corps, médecine holistique, réduction de l'anxiété, amélioration du sommeil, énergie vitale, bien-être émotionnel, libération des blocages, santé globale, détente musculaire, élimination des toxines, équilibre émotionnel, gestion du poids, soulagement des maux de dos, amélioration de la digestion, stimulation du système immunitaire, relaxation profonde, harmonisation énergétique, revitalisation du corps, réduction de la fatigue, épanouissement personnel"/>
             </Head>
         <div className={home.shiatsuPresentation}>

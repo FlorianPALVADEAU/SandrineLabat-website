@@ -11,7 +11,7 @@ function websitePolicy() {
         </li>
         <li>
             <h4>Utilisation des cookies</h4>
-            <p>Ce site web utilise des cookies pour améliorer votre expérience de navigation. Les cookies sont de petits fichiers texte placés sur votre appareil lorsque vous visitez un site web. Consultez notre politique en matière de cookies pour obtenir des informations détaillées sur les cookies que nous utilisons et comment vous pouvez les gérer.</p>
+            <p>{`Ce site web utilise des cookies pour améliorer votre expérience de navigation. Les cookies sont de petits fichiers texte placés sur votre appareil lorsque vous visitez un site web. Consultez notre politique en matière de cookies pour obtenir des informations détaillées sur les cookies que nous utilisons et comment vous pouvez les gérer.`}</p>
         </li>
         <li>
             <h4>Liens vers des sites tiers</h4>
@@ -19,16 +19,16 @@ function websitePolicy() {
         </li>
         <li>
             <h4>Propriété intellectuelle</h4>
-            <p>Tous les contenus présents sur ce site web, tels que textes, images, graphiques, logos, vidéos, musiques, icônes, sont la propriété exclusive de Sandrine Labat, sauf indication contraire. Toute utilisation non autorisée de ces contenus est strictement interdite.</p>
+            <p>{`Tous les contenus présents sur ce site web, tels que textes, images, graphiques, logos, vidéos, musiques, icônes, sont la propriété exclusive de Sandrine Labat, sauf indication contraire. Toute utilisation non autorisée de ces contenus est strictement interdite.`}</p>
         </li>
         <li>
             <h4>Modifications</h4>
-            <p>Nous nous réservons le droit de modifier cette politique de site web à tout moment. Les modifications seront publiées sur cette page et entreront en vigueur immédiatement. Nous vous encourageons à consulter régulièrement cette politique pour vous tenir informé des éventuelles mises à jour.</p>
+            <p>{`Nous nous réservons le droit de modifier cette politique de site web à tout moment. Les modifications seront publiées sur cette page et entreront en vigueur immédiatement. Nous vous encourageons à consulter régulièrement cette politique pour vous tenir informé des éventuelles mises à jour.`}</p>
         </li>
     </ol>
-    <div className={style.content}>
-        <p>{`Si vous avez des questions concernant cette page de copyrights ou notre politique de site web, veuillez nous contacter à l'adresse suivante : [adresse e-mail de contact].`}</p>
-        <p>Dernière mise à jour : [date de la dernière mise à jour].</p>
+    <div className={style.content2}>
+        <p>Si vous avez des questions concernant cette page de copyrights ou notre politique de site web, veuillez nous contacter à {`l'adresse`} suivante : <strong>sandrinelabat@gmail.com</strong>.</p>
+        <p>Dernière mise à jour : <strong>03/07/2023</strong>.</p>
     </div>
     </>
   )

@@ -5,10 +5,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    p{
-        width: 40%;
-        text-align: center;
-        padding: 50px;
+    text-align: left;
+    a, p{
+        width: auto;
+        display: flex;
+        justify-content: flex-start;
+        padding: 15px;
     }
 }

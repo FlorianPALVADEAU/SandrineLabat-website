@@ -3,7 +3,7 @@ import style from'@/styles/copyrights.module.scss'
 
 function copyrights() {
   return (
-    <div>
+    <div className={style.content}>
         <p>{`Bienvenue sur le site web de Sandrine Labat. Ce site est la propriété de Sandrine Labat. En accédant à ce site, vous acceptez les conditions générales décrites dans cette page. Veuillez lire attentivement ces informations.`}</p>
 
         <p>{`Tous les textes, images, graphiques, logos, vidéos, musiques, icônes et autres contenus présents sur ce site sont la propriété exclusive de Sandrine Labat, sauf indication contraire. Tous les contenus sont protégés par les lois internationales sur le droit d'auteur et les droits connexes. Toute utilisation non autorisée de ces contenus est strictement interdite.`}</p>

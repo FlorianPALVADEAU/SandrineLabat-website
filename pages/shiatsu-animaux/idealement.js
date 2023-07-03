@@ -2,6 +2,7 @@
 import Head from 'next/head';
 import style from'@/styles/Idealement.module.scss'
 import home from'@/styles/Home.module.scss'
+import { NextSeo } from 'next-seo';
 
 // Components
 import Title from '../../components/title'
@@ -20,9 +21,25 @@ export default function Idealement() {
 
     return (
         <>
+            <NextSeo
+                title="Idéalement, avant, pendant et après la séance - Sandrine LABAT"
+                description="Evitez de travailler votre animal de manière trop intensive, laissez-le tel quel s'il est 'sale', enlevez le maximum de boue des pieds ou pattes, ne pas donner de ration de nourriture 45 mn avant le soin, réalisez le soin dans un endroit calme que votre animal connaît, offrez un soin sans l'imposer, laissez votre animal s'exprimer pendant la séance, libérez votre animal après la séance, recommandez 48 H de repos après un soin, conseillez un minimum de 5 jours entre le soin et une compétition ou un transport."
+                openGraph={{
+                title: "Idéalement, avant, pendant et après la séance - Sandrine LABAT",
+                description: "Evitez de travailler votre animal de manière trop intensive, laissez-le tel quel s'il est 'sale', enlevez le maximum de boue des pieds ou pattes, ne pas donner de ration de nourriture 45 mn avant le soin, réalisez le soin dans un endroit calme que votre animal connaît, offrez un soin sans l'imposer, laissez votre animal s'exprimer pendant la séance, libérez votre animal après la séance, recommandez 48 H de repos après un soin, conseillez un minimum de 5 jours entre le soin et une compétition ou un transport.",
+                images: [
+                    {
+                    url: 'https://zupimages.net/viewer.php?id=23/27/qztj.jpg',
+                    width: 1200,
+                    height: 630,
+                    alt: 'Photo illustrative du site de Sandrine LABAT'
+                    }
+                ],
+                site_name: 'Sandrine LABAT Shiatsu'
+                }}
+            />
             <Head>
-                <title>Idéalement, avant la séance - la séance - Idéalement, pendant la séance - Idéalement, après la séance</title>
-                <meta name="description" content="Evitez de travailler votre animal de manière trop intensive, laissez-le tel quel s'il est 'sale', enlevez le maximum de boue des pieds ou pattes, ne pas donner de ration de nourriture 45 mn avant le soin, réalisez le soin dans un endroit calme que votre animal connaît, offrez un soin sans l'imposer, laissez votre animal s'exprimer pendant la séance, libérez votre animal après la séance, recommandez 48 H de repos après un soin, conseillez un minimum de 5 jours entre le soin et une compétition ou un transport." />
+                <title></title>
                 <meta name="keywords" content={keywords.join(", ")} />
             </Head>
 

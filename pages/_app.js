@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
     <Head>
-      <meta charset="UTF-8"/>
+      <meta charSet="UTF-8"/>
       <meta name="author" content="Sandrine LABAT"/>
       <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     </Head>
